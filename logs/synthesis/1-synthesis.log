@@ -46,7 +46,7 @@ Generating RTLIL representation for module `\user_project_wrapper'.
 Successfully finished Verilog frontend.
 
 5. Generating Graphviz representation of design.
-Writing dot description to `/home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_17_20_58/tmp/synthesis/hierarchy.dot'.
+Writing dot description to `/home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_18_11_24/tmp/synthesis/hierarchy.dot'.
 Dumping module user_project_wrapper to page 1.
 
 6. Executing HIERARCHY pass (managing design hierarchy).
@@ -57,7 +57,6 @@ Top module:  \user_project_wrapper
 6.2. Analyzing design hierarchy..
 Top module:  \user_project_wrapper
 Removed 0 unused modules.
-Warning: Resizing cell port user_project_wrapper.mprj.io_in from 38 bits to 16 bits.
 
 7. Printing statistics.
 
@@ -145,7 +144,7 @@ Found and reported 44 problems.
 12. Executing Verilog backend.
 Dumping module `\user_project_wrapper'.
 
-Warnings: 45 unique messages, 45 total
-End of script. Logfile hash: 66da9cac0b, CPU: user 41.11s system 2.18s, MEM: 2953.71 MB peak
+Warnings: 44 unique messages, 44 total
+End of script. Logfile hash: 5ae2e2db7f, CPU: user 35.65s system 3.43s, MEM: 2953.64 MB peak
 Yosys 0.30+48 (git sha1 14d50a176d5, gcc 8.3.1 -fPIC -Os)
-Time spent: 99% 6x read_verilog (43 sec), 0% 2x stat (0 sec), ...
+Time spent: 99% 6x read_verilog (38 sec), 0% 2x stat (0 sec), ...

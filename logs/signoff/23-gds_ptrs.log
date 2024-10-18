@@ -171,4 +171,4 @@ Reading "user_proj_example".
     480000 uses
     485000 uses
 Reading "user_project_wrapper".
-[INFO]: Wrote /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_17_20_58/tmp/signoff/gds_ptrs.mag including GDS pointers.
+[INFO]: Wrote /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_18_11_24/tmp/signoff/gds_ptrs.mag including GDS pointers.

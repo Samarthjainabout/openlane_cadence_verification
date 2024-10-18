@@ -178,6 +178,6 @@ Loading DRC CIF style.
 No errors found.
 [INFO]: COUNT: 0
 [INFO]: Should be divided by 3 or 4
-[INFO]: DRC Checking DONE (/home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_17_20_58/reports/signoff/drc.rpt)
-[INFO]: Saving mag view with DRC errors (/home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_17_20_58/results/signoff/user_project_wrapper.drc.mag)
+[INFO]: DRC Checking DONE (/home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_18_11_24/reports/signoff/drc.rpt)
+[INFO]: Saving mag view with DRC errors (/home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_18_11_24/results/signoff/user_project_wrapper.drc.mag)
 [INFO]: Saved

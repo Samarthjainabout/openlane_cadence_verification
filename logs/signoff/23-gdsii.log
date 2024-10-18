@@ -44,7 +44,7 @@ LEF read: Processed 797 lines.
 Reading LEF data from file /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/../../lef/user_proj_example.lef.
 This action cannot be undone.
 LEF read: Processed 5172 lines.
-Reading DEF data from file /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_17_20_58/results/routing/user_project_wrapper.def.
+Reading DEF data from file /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_18_11_24/results/routing/user_project_wrapper.def.
 This action cannot be undone.
   Processed 2 vias total.
   Processed 1 subcell instances total.

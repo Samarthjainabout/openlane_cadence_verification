@@ -44,7 +44,7 @@ LEF read: Processed 797 lines.
 Reading LEF data from file /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/../../lef/user_proj_example.lef.
 This action cannot be undone.
 LEF read: Processed 5172 lines.
-Reading DEF data from file /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_17_20_58/results/routing/user_project_wrapper.def.
+Reading DEF data from file /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_18_11_24/results/routing/user_project_wrapper.def.
 This action cannot be undone.
   Processed 2 vias total.
   Processed 1 subcell instances total.
@@ -53,7 +53,7 @@ This action cannot be undone.
   Processed 637 nets total.
 DEF read: Processed 13811 lines.
 [INFO]: Writing abstract LEF
-Generating LEF output /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_17_20_58/results/signoff/user_project_wrapper.lef for cell user_project_wrapper:
+Generating LEF output /home/vboxuser/caravel_user_project/openlane/user_project_wrapper/runs/24_10_18_11_24/results/signoff/user_project_wrapper.lef for cell user_project_wrapper:
 Diagnostic:  Write LEF header for cell user_project_wrapper
 Diagnostic:  Writing LEF output for cell user_project_wrapper
 Diagnostic:  Scale value is 0.005000
