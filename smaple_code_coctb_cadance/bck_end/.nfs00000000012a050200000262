@@ -1,0 +1,116 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Fri Oct 18 14:23:32 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v15.21-s080_1 (64bit) 01/22/2016 11:13 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 15.21-s080_1 NR160121-1146/15_21-UB (database version 2.30, 308.6.1) {superthreading v1.26}
+#@(#)CDS: AAE 15.21-s020 (64bit) 01/22/2016 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 15.21-s043_1 () Jan 22 2016 03:15:17 ( )
+#@(#)CDS: SYNTECH 15.21-s017_1 () Jan 13 2016 20:03:20 ( )
+#@(#)CDS: CPE v15.21-s086
+#@(#)CDS: IQRC/TQRC 15.1.3-s219 (64bit) Sat Nov 14 01:05:27 PST 2015 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+save_global Default.globals
+init_design
+set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+set conf_qxconf_file NULL
+set conf_qxlib_file NULL
+set defHierChar /
+set distributed_client_message_echo 1
+set distributed_mmmc_disable_reports_auto_redirection 0
+set init_gnd_net vgnd
+set init_lef_file {/apps/PDK/skywater/S130/pdk/V2.1.305/TECH/s130.tlef
+/apps/PDK/skywater/S130/stdcell/hd_hv_ms/V2.1.200/scs130ms/lef/scs130ms.lef}
+set init_mmmc_file /home/staff/elesamj/skywater_digital/sk130_digital/bk_end/scrpt/mmmc-2023.tcl
+set init_pwr_net vpwr
+set init_top_cell tdc_top_wpr
+set init_verilog /home/staff/elesamj/skywater_digital/sk130_digital/ft_end/syn/netlist/tdc_top_wr.syn.v
+set latch_time_borrow_mode max_borrow
+set pegDefaultResScaleFactor 1
+set pegDetailResScaleFactor 1
+set report_inactive_arcs_format {from to when arc_type sense reason}
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+suppressMessage -silent GLOBAL-100
+unsuppressMessage -silent GLOBAL-100
+set timing_enable_default_delay_arc 1
+setViaGenMode -optimize_cross_via true
+setViaGenMode -ignore_viarule_enclosure false
+setMaxRouteLayer 4
+setDesignMode -process 130
+setIoFlowFlag 0
+floorPlan -site unit -s 800 800 10 10 10 10
+uiSetTool select
+getIoFlowFlag
+fit
+addEndCap -preCap scs130ms_decap_4 -postCap scs130ms_decap_4 -prefix ENDCAP
+addWellTap -cell scs130ms_tapvpwrvgnd_1 -cellInterval 20 -fixedGap -prefix WELLTAP
+addWellTap -cell scs130ms_tapvpwrvgnd_1 -cellInterval 10 -fixedGap -prefix WELLTAP -area 0 0 20 860 -siteOffset 5
+clearGlobalNets
+globalNetConnect vpwr -type pgpin -pin vpwr -instanceBasename * -hierarchicalInstance {}
+globalNetConnect vgnd -type pgpin -pin vgnd -instanceBasename * -hierarchicalInstance {}
+globalNetConnect vpwr -type pgpin -pin vpb -instanceBasename * -hierarchicalInstance {}
+globalNetConnect vgnd -type pgpin -pin vnb -instanceBasename * -hierarchicalInstance {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer rdl -stacked_via_bottom_layer li -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vpwr vgnd} -type core_rings -follow core -layer {top li bottom li left met1 right met1} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer rdl -stacked_via_bottom_layer li -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {vpwr vgnd} -type core_rings -follow core -layer {top li bottom li left met1 right met1} -width {top 1.8 bottom 1.8 left 1.8 right 1.8} -spacing {top 1.8 bottom 1.8 left 1.8 right 1.8} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 0 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer rdl -stacked_via_bottom_layer li -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {vgnd vpwr} -layer met2 -direction vertical -width 1.8 -spacing 1.8 -set_to_set_distance 100 -start_from left -start_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit rdl -padcore_ring_bottom_layer_limit li -block_ring_top_layer_limit rdl -block_ring_bottom_layer_limit li -use_wire_group 0 -snap_wire_center_to_grid None
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length stripe_width -stacked_via_top_layer rdl -stacked_via_bottom_layer li -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring } -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape   }
+addStripe -nets {vgnd vpwr} -layer met3 -direction horizontal -width 1.8 -spacing 1.8 -set_to_set_distance 100 -start_from bottom -start_offset 100 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit rdl -padcore_ring_bottom_layer_limit li -block_ring_top_layer_limit rdl -block_ring_bottom_layer_limit li -use_wire_group 0 -snap_wire_center_to_grid None
+setSrouteMode -viaConnectToShape { padring ring stripe blockring blockpin noshape blockwire corewire followpin iowire noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { li(1) rdl(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { li(1) rdl(7) } -nets { vpwr vgnd } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { li(1) rdl(7) }
+setSrouteMode -viaConnectToShape { padring ring stripe blockring blockpin noshape blockwire corewire followpin iowire noshape }
+sroute -connect { blockPin padPin padRing corePin floatingStripe } -layerChangeRange { li(1) rdl(7) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { li(1) rdl(7) } -nets { vpwr vgnd } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { li(1) rdl(7) }
+setViaGenMode -optimize_cross_via true
+editPin -fixOverlap 1 -unit MICRON -fixedPin 1 -spreadDirection clockwise -edge 1 -layer 3 -spreadType start -spacing 5 -offsetStart 240 -pin {{stop_i[0]} {stop_i[1]} {stop_i[2]} {stop_i[3]} {stop_i[4]} {stop_i[5]} {stop_i[6]} {stop_i[7]} {stop_i[8]} {stop_i[9]} {stop_i[10]} {stop_i[11]} {stop_i[12]} {stop_i[13]} {stop_i[14]} {stop_i[15]} {stop_i[16]} {stop_i[17]} {stop_i[18]} {stop_i[19]} {stop_i[20]} {stop_i[21]} {stop_i[22]} {stop_i[23]} {stop_i[24]} {stop_i[25]} {stop_i[26]} {stop_i[27]} {stop_i[28]} {stop_i[29]} {stop_i[30]} {stop_i[31]} {stop_i[32]} {stop_i[33]} {stop_i[34]} {stop_i[35]} {stop_i[36]} {stop_i[37]} {stop_i[38]} {stop_i[39]} {stop_i[40]} {stop_i[41]} {stop_i[42]} {stop_i[43]} {stop_i[44]} {stop_i[45]} {stop_i[46]} {stop_i[47]} {stop_i[48]} {stop_i[49]} {stop_i[50]} {stop_i[51]} {stop_i[52]} {stop_i[53]} {stop_i[54]} {stop_i[55]} {stop_i[56]} {stop_i[57]} {stop_i[58]} {stop_i[59]} {stop_i[60]} {stop_i[61]} {stop_i[62]} {stop_i[63]} {stop_i[64]} {stop_i[65]} {stop_i[66]} {stop_i[67]} {stop_i[68]} {stop_i[69]} {stop_i[70]} {stop_i[71]} {stop_i[72]} {stop_i[73]} {stop_i[74]} {stop_i[75]} {stop_i[76]} {stop_i[77]} {stop_i[78]} {stop_i[79]} {stop_i[80]} {stop_i[81]} {stop_i[82]} {stop_i[83]} {stop_i[84]} {stop_i[85]} {stop_i[86]} {stop_i[87]} {stop_i[88]} {stop_i[89]} {stop_i[90]} {stop_i[91]} {stop_i[92]} {stop_i[93]} {stop_i[94]} {stop_i[95]} {stop_i[96]} {stop_i[97]} {stop_i[98]} {stop_i[99]} {stop_i[100]} {stop_i[101]} {stop_i[102]} {stop_i[103]} {stop_i[104]} {stop_i[105]} {stop_i[106]} {stop_i[107]} {stop_i[108]} {stop_i[109]} {stop_i[110]} {stop_i[111]} {stop_i[112]} {stop_i[113]} {stop_i[114]} {stop_i[115]} {stop_i[116]} {stop_i[117]} {stop_i[118]} {stop_i[119]} {stop_i[120]} {stop_i[121]} {stop_i[122]} {stop_i[123]} {stop_i[124]} {stop_i[125]} {stop_i[126]} {stop_i[127]} {stop_i[128]} {stop_i[129]} {stop_i[130]} {stop_i[131]} {stop_i[132]} {stop_i[133]} {stop_i[134]} {stop_i[135]} {stop_i[136]} {stop_i[137]} {stop_i[138]} {stop_i[139]} {stop_i[140]} {stop_i[141]} {stop_i[142]} {stop_i[143]} {stop_i[144]} {stop_i[145]} {stop_i[146]} {stop_i[147]} {stop_i[148]} {stop_i[149]} {stop_i[150]} {stop_i[151]} {stop_i[152]} {stop_i[153]} {stop_i[154]} {stop_i[155]} {stop_i[156]} {stop_i[157]} {stop_i[158]} {stop_i[159]} {stop_i[160]} {stop_i[161]} {stop_i[162]} {stop_i[163]} {stop_i[164]} {stop_i[165]} {stop_i[166]} {stop_i[167]} {stop_i[168]} {stop_i[169]} {stop_i[170]} {stop_i[171]} {stop_i[172]} {stop_i[173]} {stop_i[174]} {stop_i[175]} {stop_i[176]} {stop_i[177]} {stop_i[178]} {stop_i[179]} {stop_i[180]} {stop_i[181]} {stop_i[182]} {stop_i[183]} {stop_i[184]} {stop_i[185]} {stop_i[186]} {stop_i[187]} {stop_i[188]} {stop_i[189]} {stop_i[190]} {stop_i[191]} {stop_i[192]} {stop_i[193]} {stop_i[194]} {stop_i[195]} {stop_i[196]} {stop_i[197]} {stop_i[198]} {stop_i[199]} {stop_i[200]} {stop_i[201]} {stop_i[202]} {stop_i[203]} {stop_i[204]} {stop_i[205]} {stop_i[206]} {stop_i[207]} {stop_i[208]} {stop_i[209]} {stop_i[210]} {stop_i[211]} {stop_i[212]} {stop_i[213]} {stop_i[214]} {stop_i[215]} {stop_i[216]} {stop_i[217]} {stop_i[218]} {stop_i[219]} {stop_i[220]} {stop_i[221]} {stop_i[222]} {stop_i[223]} {stop_i[224]} {stop_i[225]} {stop_i[226]} {stop_i[227]} {stop_i[228]} {stop_i[229]} {stop_i[230]} {stop_i[231]} {stop_i[232]} {stop_i[233]} {stop_i[234]} {stop_i[235]} {stop_i[236]} {stop_i[237]} {stop_i[238]} {stop_i[239]} {stop_i[240]} {stop_i[241]} {stop_i[242]} {stop_i[243]} {stop_i[244]} {stop_i[245]} {stop_i[246]} {stop_i[247]} {stop_i[248]} {stop_i[249]} {stop_i[250]} {stop_i[251]} {stop_i[252]} {stop_i[253]} {stop_i[254]} {stop_i[255]}}
+editPin -pinWidth 0.14 -pinDepth 0.485 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 3 -layer 3 -spreadType start -spacing 4 -offsetStart 300 -pin {{la_data_in[59]} {la_data_in[60]} {la_data_in[61]} {la_data_in[62]} {la_data_in[63]} {la_data_in[64]} {la_data_in[65]} {la_data_in[66]} {la_data_in[67]} {la_data_in[68]} {la_data_in[69]} {la_data_in[70]} {la_data_in[71]} {la_data_in[72]} {la_data_in[73]} {la_data_out[59]} {la_data_out[60]} {la_data_out[61]} {la_data_out[62]} {la_data_out[63]} {la_data_out[64]} {la_data_out[65]} {la_data_out[66]} {la_data_out[67]} {la_data_out[68]} {la_data_out[69]} {la_data_out[70]} {la_data_out[71]} {la_data_out[72]} {la_data_out[73]} {la_oenb[59]} {la_oenb[60]} {la_oenb[61]} {la_oenb[62]} {la_oenb[63]} {la_oenb[64]} {la_oenb[65]} {la_oenb[66]} {la_oenb[67]} {la_oenb[68]} {la_oenb[69]} {la_oenb[70]} {la_oenb[71]} {la_oenb[72]} {la_oenb[73]}}
+editPin -pinWidth 0.3 -pinDepth 0.8 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection clockwise -edge 0 -layer 4 -spreadType start -spacing 25 -offsetStart 250 -pin {wbs_clk_i wbs_cyc_i wbs_rst_i {wbs_sel_i[0]} {wbs_sel_i[1]} {wbs_sel_i[2]} {wbs_sel_i[3]} wbs_stb_i wbs_we_i wbs_ack_o}
+editPin -pinWidth 0.14 -pinDepth 0.485 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 3 -spreadType start -spacing 6 -offsetStart 100 -pin {{wbs_adr_i[0]} {wbs_adr_i[1]} {wbs_adr_i[2]} {wbs_adr_i[3]} {wbs_adr_i[4]} {wbs_adr_i[5]} {wbs_adr_i[6]} {wbs_adr_i[7]} {wbs_adr_i[8]} {wbs_adr_i[9]} {wbs_adr_i[10]} {wbs_adr_i[11]} {wbs_adr_i[12]} {wbs_adr_i[13]} {wbs_adr_i[14]} {wbs_adr_i[15]} {wbs_adr_i[16]} {wbs_adr_i[17]} {wbs_adr_i[18]} {wbs_adr_i[19]} {wbs_adr_i[20]} {wbs_adr_i[21]} {wbs_adr_i[22]} {wbs_adr_i[23]} {wbs_adr_i[24]} {wbs_adr_i[25]} {wbs_adr_i[26]} {wbs_adr_i[27]} {wbs_adr_i[28]} {wbs_adr_i[29]} {wbs_adr_i[30]} {wbs_adr_i[31]}}
+editPin -pinWidth 0.14 -pinDepth 0.485 -fixedPin 1 -fixOverlap 1 -global_location -unit MICRON -spreadDirection clockwise -side Bottom -layer 3 -spreadType start -spacing 3.74 -start 1379 -0.176 -pin {{la_data_out_dbg[83]} {la_data_out_dbg[84]} {la_data_out_dbg[85]} {la_data_out_dbg[86]} {la_data_out_dbg[87]} {la_data_out_dbg[88]} {la_data_out_dbg[89]} {la_data_out_dbg[90]} {la_data_out_dbg[91]} {la_data_out_dbg[92]} {la_data_out_dbg[93]} {la_data_out_dbg[94]} {la_data_out_dbg[95]} {la_data_out_dbg[96]} {la_data_out_dbg[97]} {la_data_out_dbg[98]} }
+editPin -pinWidth 0.14 -pinDepth 0.485 -fixedPin 1 -fixOverlap 1 -unit MICRON -spreadDirection counterclockwise -edge 3 -layer 3 -spreadType start -spacing 6 -offsetStart 550 -pin {{wbs_dat_i[0]} {wbs_dat_i[1]} {wbs_dat_i[2]} {wbs_dat_i[3]} {wbs_dat_i[4]} {wbs_dat_i[5]} {wbs_dat_i[6]} {wbs_dat_i[7]} {wbs_dat_i[8]} {wbs_dat_i[9]} {wbs_dat_i[10]} {wbs_dat_i[11]} {wbs_dat_i[12]} {wbs_dat_i[13]} {wbs_dat_i[14]} {wbs_dat_i[15]} {wbs_dat_i[16]} {wbs_dat_i[17]} {wbs_dat_i[18]} {wbs_dat_i[19]} {wbs_dat_i[20]} {wbs_dat_i[21]} {wbs_dat_i[22]} {wbs_dat_i[23]} {wbs_dat_i[24]} {wbs_dat_i[25]} {wbs_dat_i[26]} {wbs_dat_i[27]} {wbs_dat_i[28]} {wbs_dat_i[29]} {wbs_dat_i[30]} {wbs_dat_i[31]} {wbs_dat_o[0]} {wbs_dat_o[1]} {wbs_dat_o[2]} {wbs_dat_o[3]} {wbs_dat_o[4]} {wbs_dat_o[5]} {wbs_dat_o[6]} {wbs_dat_o[7]} {wbs_dat_o[8]} {wbs_dat_o[9]} {wbs_dat_o[10]} {wbs_dat_o[11]} {wbs_dat_o[12]} {wbs_dat_o[13]} {wbs_dat_o[14]} {wbs_dat_o[15]} {wbs_dat_o[16]} {wbs_dat_o[17]} {wbs_dat_o[18]} {wbs_dat_o[19]} {wbs_dat_o[20]} {wbs_dat_o[21]} {wbs_dat_o[22]} {wbs_dat_o[23]} {wbs_dat_o[24]} {wbs_dat_o[25]} {wbs_dat_o[26]} {wbs_dat_o[27]} {wbs_dat_o[28]} {wbs_dat_o[29]} {wbs_dat_o[30]} {wbs_dat_o[31]}}

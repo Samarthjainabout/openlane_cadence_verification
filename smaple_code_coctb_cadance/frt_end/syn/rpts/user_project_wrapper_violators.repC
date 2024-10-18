@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : user_project_wrapper
+Version: T-2022.03-SP3
+Date   : Fri Oct 18 14:19:32 2024
+****************************************
+
+
+   max_transition
+
+                             Required        Actual
+   Net                      Transition     Transition        Slack
+   -----------------------------------------------------------------
+   la_oenb[65]                  0.50           0.97          -0.47  (VIOLATED)
+       PIN :   U5/A             0.50           0.97          -0.47  (VIOLATED)
+       PORT :  la_oenb[65]      0.50           0.97          -0.47  (VIOLATED)
+   la_data_in[0]                0.50           0.86          -0.36  (VIOLATED)
+       PIN :   U15/BN           0.50           0.86          -0.36  (VIOLATED)
+       PORT :  la_data_in[0]
+                                0.50           0.86          -0.36  (VIOLATED)
+   la_data_in[65]               0.50           0.86          -0.36  (VIOLATED)
+       PIN :   U7/A2            0.50           0.86          -0.36  (VIOLATED)
+       PORT :  la_data_in[65]
+                                0.50           0.86          -0.36  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      3                  -1.19  
+
+1

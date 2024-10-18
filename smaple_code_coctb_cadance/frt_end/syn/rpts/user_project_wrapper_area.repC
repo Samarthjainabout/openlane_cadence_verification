@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : area
+Design : user_project_wrapper
+Version: T-2022.03-SP3
+Date   : Fri Oct 18 14:19:31 2024
+****************************************
+
+Library(s) Used:
+
+    scs130ms_tt_1.80v_25C (File: /users/staff/elesamj/skywater_digital/smaple_code_coctb/frt_end/syn/scs130ms_tt_1.80v_25C.db)
+
+Number of ports:                          645
+Number of nets:                            17
+Number of cells:                           12
+Number of combinational cells:             11
+Number of sequential cells:                 1
+Number of macros/black boxes:               0
+Number of buf/inv:                          8
+Number of references:                       7
+
+Combinational area:                198.201602
+Buf/Inv area:                      174.225602
+Noncombinational area:              27.172800
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   225.374402
+Total area:                 undefined
+1
+ 
+****************************************
+Report : reference
+Design : user_project_wrapper
+Version: T-2022.03-SP3
+Date   : Fri Oct 18 14:19:31 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+scs130ms_a22o_1    scs130ms_tt_1.80v_25C
+                                 11.188800       1     11.188800  
+scs130ms_clkbuf_16 scs130ms_tt_1.80v_25C
+                                 31.968000       5    159.840002  
+scs130ms_conb_1    scs130ms_tt_1.80v_25C
+                                  4.795200       1      4.795200  
+scs130ms_dfxtp_1   scs130ms_tt_1.80v_25C
+                                 27.172800       1     27.172800  n
+scs130ms_inv_1     scs130ms_tt_1.80v_25C
+                                  4.795200       2      9.590400  
+scs130ms_inv_2     scs130ms_tt_1.80v_25C
+                                  4.795200       1      4.795200  
+scs130ms_nor2b_1   scs130ms_tt_1.80v_25C
+                                  7.992000       1      7.992000  
+-----------------------------------------------------------------------------
+Total 7 references                                    225.374402
+1

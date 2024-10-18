@@ -1,0 +1,30 @@
+Version 4.1
+Micron 1000
+LAYERS 23
+poly
+li
+met1
+met2
+met3
+met4
+met5
+rdl
+licon
+mcon
+via1
+via2
+via3
+via4
+rdlcon
+OverlapCheck
+pwell
+nwell
+dnwell
+diff
+nsdm
+psdm
+npc
+VIAS 0
+SPECIALNETS
+0 0 1 vgnd
+0 0 1 vpwr

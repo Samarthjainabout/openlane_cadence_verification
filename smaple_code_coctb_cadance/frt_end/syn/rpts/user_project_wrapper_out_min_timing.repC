@@ -1,0 +1,134 @@
+Warning: Worst timing paths might not be returned. (TIM-104)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 3
+        -greater_path 0.00
+        -max_paths 1000000
+Design : user_project_wrapper
+Version: T-2022.03-SP3
+Date   : Fri Oct 18 14:19:32 2024
+****************************************
+
+Operating Conditions: scs130ms_tt_1.80v_25C   Library: scs130ms_tt_1.80v_25C
+Wire Load Model Mode: top
+
+  Startpoint: mprj/counter/q_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: la_data_out[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        4.11       4.11
+  mprj/counter/q_reg/CLK (scs130ms_dfxtp_1)               0.00       4.11 r
+  mprj/counter/q_reg/Q (scs130ms_dfxtp_1)                 0.26       4.37 f
+  U8/X (scs130ms_clkbuf_16)                               0.35       4.72 f
+  la_data_out[1] (out)                                    0.00       4.72 f
+  data arrival time                                                  4.72
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        4.11       4.11
+  clock uncertainty                                       0.25       4.36
+  output external delay                                   0.00       4.36
+  data required time                                                 4.36
+  --------------------------------------------------------------------------
+  data required time                                                 4.36
+  data arrival time                                                 -4.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.36
+
+
+  Startpoint: mprj/counter/q_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: la_data_out[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        4.11       4.11
+  mprj/counter/q_reg/CLK (scs130ms_dfxtp_1)               0.00       4.11 r
+  mprj/counter/q_reg/Q (scs130ms_dfxtp_1)                 0.26       4.37 f
+  U8/X (scs130ms_clkbuf_16)                               0.35       4.72 f
+  la_data_out[0] (out)                                    0.00       4.72 f
+  data arrival time                                                  4.72
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        4.11       4.11
+  clock uncertainty                                       0.25       4.36
+  output external delay                                   0.00       4.36
+  data required time                                                 4.36
+  --------------------------------------------------------------------------
+  data required time                                                 4.36
+  data arrival time                                                 -4.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.36
+
+
+  Startpoint: mprj/counter/q_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: la_data_out[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        4.11       4.11
+  mprj/counter/q_reg/CLK (scs130ms_dfxtp_1)               0.00       4.11 r
+  mprj/counter/q_reg/Q (scs130ms_dfxtp_1)                 0.26       4.37 r
+  U8/X (scs130ms_clkbuf_16)                               0.43       4.80 r
+  la_data_out[1] (out)                                    0.00       4.80 r
+  data arrival time                                                  4.80
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        4.11       4.11
+  clock uncertainty                                       0.25       4.36
+  output external delay                                   0.00       4.36
+  data required time                                                 4.36
+  --------------------------------------------------------------------------
+  data required time                                                 4.36
+  data arrival time                                                 -4.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: mprj/counter/q_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: la_data_out[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        4.11       4.11
+  mprj/counter/q_reg/CLK (scs130ms_dfxtp_1)               0.00       4.11 r
+  mprj/counter/q_reg/Q (scs130ms_dfxtp_1)                 0.26       4.37 r
+  U8/X (scs130ms_clkbuf_16)                               0.43       4.80 r
+  la_data_out[0] (out)                                    0.00       4.80 r
+  data arrival time                                                  4.80
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (propagated)                        4.11       4.11
+  clock uncertainty                                       0.25       4.36
+  output external delay                                   0.00       4.36
+  data required time                                                 4.36
+  --------------------------------------------------------------------------
+  data required time                                                 4.36
+  data arrival time                                                 -4.80
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+1

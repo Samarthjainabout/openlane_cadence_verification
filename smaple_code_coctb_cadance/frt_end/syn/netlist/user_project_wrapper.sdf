@@ -1,0 +1,154 @@
+(DELAYFILE
+(SDFVERSION "OVI 1.0")
+(DESIGN "user_project_wrapper")
+(DATE "Fri Oct 18 14:19:21 2024")
+(VENDOR "scs130ms_tt_1.80v_25C")
+(PROGRAM "Synopsys Design Compiler cmos")
+(VERSION "T-2022.03-SP3")
+(DIVIDER /)
+(VOLTAGE 1.80:1.80:1.80)
+(PROCESS)
+(TEMPERATURE 25.00:25.00:25.00)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "user_project_wrapper")
+  (INSTANCE)
+  (DELAY
+    (ABSOLUTE
+    (INTERCONNECT la_data_in[0] U15/BN (0.000:0.000:0.000))
+    (INTERCONNECT U7/X U15/A (0.000:0.000:0.000))
+    (INTERCONNECT U7/X U13/A (0.000:0.000:0.000))
+    (INTERCONNECT U7/X U12/A (0.000:0.000:0.000))
+    (INTERCONNECT U7/X U11/A (0.000:0.000:0.000))
+    (INTERCONNECT U7/X U10/A (0.000:0.000:0.000))
+    (INTERCONNECT U6/Y U9/A (0.000:0.000:0.000))
+    (INTERCONNECT mprj\/counter\/q_reg/Q U8/A (0.000:0.000:0.000))
+    (INTERCONNECT U9/Y U7/A1 (0.000:0.000:0.000))
+    (INTERCONNECT la_data_in[65] U7/A2 (0.000:0.000:0.000))
+    (INTERCONNECT U6/Y U7/B1 (0.000:0.000:0.000))
+    (INTERCONNECT wb_rst_i U7/B2 (0.000:0.000:0.000))
+    (INTERCONNECT U5/Y U6/A (0.000:0.000:0.000))
+    (INTERCONNECT la_oenb[65] U5/A (0.000:0.000:0.000))
+    (INTERCONNECT U15/Y mprj\/counter\/q_reg/D (0.000:0.000:0.000))
+    (INTERCONNECT wb_clk_i mprj\/counter\/q_reg/CLK (0.000:0.000:0.000))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_nor2b_1")
+  (INSTANCE U15)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH BN Y (0.097:0.125:0.125) (0.091:0.300:0.300))
+    (IOPATH A Y (0.116:0.132:0.132) (0.041:0.045:0.045))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_clkbuf_16")
+  (INSTANCE U13)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A X (0.484:0.535:0.535) (0.393:0.441:0.441))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_clkbuf_16")
+  (INSTANCE U12)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A X (0.484:0.535:0.535) (0.393:0.441:0.441))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_clkbuf_16")
+  (INSTANCE U11)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A X (0.484:0.535:0.535) (0.393:0.441:0.441))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_clkbuf_16")
+  (INSTANCE U10)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A X (0.484:0.535:0.535) (0.393:0.441:0.441))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_inv_2")
+  (INSTANCE U9)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.031:0.041:0.041) (0.021:0.023:0.023))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_clkbuf_16")
+  (INSTANCE U8)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A X (0.430:0.475:0.475) (0.347:0.384:0.384))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_a22o_1")
+  (INSTANCE U7)
+  (DELAY
+    (ABSOLUTE
+    (COND (A2&!B1&!B2) (IOPATH A1 X (0.302:0.335:0.335) (0.246:0.272:0.272)))
+    (COND (A2&!B1&B2) (IOPATH A1 X (0.294:0.326:0.326) (0.261:0.288:0.288)))
+    (COND (A2&B1&!B2) (IOPATH A1 X (0.301:0.334:0.334) (0.286:0.317:0.317)))
+    (COND (A1&!B1&!B2) (IOPATH A2 X (0.318:0.423:0.423) (0.274:0.544:0.544)))
+    (COND (A1&!B1&B2) (IOPATH A2 X (0.310:0.403:0.403) (0.302:0.552:0.552)))
+    (COND (A1&B1&!B2) (IOPATH A2 X (0.317:0.419:0.419) (0.310:0.575:0.575)))
+    (COND (!A1&!A2&B2) (IOPATH B1 X (0.285:0.316:0.316) (0.209:0.239:0.239)))
+    (COND (!A1&A2&B2) (IOPATH B1 X (0.286:0.317:0.317) (0.238:0.269:0.269)))
+    (COND (A1&!A2&B2) (IOPATH B1 X (0.296:0.328:0.328) (0.267:0.302:0.302)))
+    (COND (!A1&!A2&B1) (IOPATH B2 X (0.270:0.298:0.298) (0.208:0.230:0.230)))
+    (COND (!A1&A2&B1) (IOPATH B2 X (0.271:0.300:0.300) (0.251:0.278:0.278)))
+    (COND (A1&!A2&B1) (IOPATH B2 X (0.281:0.311:0.311) (0.264:0.292:0.292)))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_inv_1")
+  (INSTANCE U6)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.061:0.105:0.105) (0.041:0.069:0.069))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_inv_1")
+  (INSTANCE U5)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH A Y (0.048:0.211:0.211) (0.028:0.015:0.015))
+    )
+  )
+)
+(CELL
+  (CELLTYPE "scs130ms_dfxtp_1")
+  (INSTANCE mprj\/counter\/q_reg)
+  (DELAY
+    (ABSOLUTE
+    (IOPATH CLK Q (0.259:0.287:0.287) (0.259:0.286:0.286))
+    )
+  )
+  (TIMINGCHECK
+    (WIDTH (posedge CLK) (0.075:0.075:0.075))
+    (WIDTH (negedge CLK) (0.177:0.177:0.177))
+    (SETUP D (posedge CLK) (0.093:0.107:0.107))
+    (HOLD D (posedge CLK) (-0.042:-0.026:-0.026))
+  )
+)
+)

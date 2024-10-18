@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : register
+Design : user_project_wrapper
+Version: T-2022.03-SP3
+Date   : Fri Oct 18 14:19:31 2024
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+mprj/counter/q_reg        scs130ms_dfxtp_1
+                                          scs130ms_tt_1.80v_25C
+                                                          27.172800 n
+--------------------------------------------------------------------------------
+Total 1 cells                                             27.172800
+1
