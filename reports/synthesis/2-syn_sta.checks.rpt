@@ -1,0 +1,1381 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Typical Corner ===================================
+
+Startpoint: wb_rst_i (input port clocked by clk)
+Endpoint: mprj/_279_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                         12.50   18.07 v input external delay
+                  0.00    0.00   18.07 v wb_rst_i (in)
+     1    0.01                           wb_rst_i (net)
+                  0.00    0.00   18.07 v mprj/input37/A (sky130_fd_sc_hd__buf_8)
+                  0.09    0.15   18.22 v mprj/input37/X (sky130_fd_sc_hd__buf_8)
+    35    0.17                           mprj/net37 (net)
+                  0.23    0.11   18.33 v mprj/_152_/A_N (sky130_fd_sc_hd__nand2b_1)
+                  0.07    0.24   18.57 v mprj/_152_/Y (sky130_fd_sc_hd__nand2b_1)
+     1    0.00                           mprj/_048_ (net)
+                  0.07    0.00   18.57 v mprj/_153_/B1 (sky130_fd_sc_hd__o21ai_1)
+                  0.12    0.09   18.66 ^ mprj/_153_/Y (sky130_fd_sc_hd__o21ai_1)
+     1    0.00                           mprj/_049_ (net)
+                  0.12    0.00   18.66 ^ mprj/hold202/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.05    0.59   19.25 ^ mprj/hold202/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.00                           mprj/net477 (net)
+                  0.05    0.00   19.25 ^ mprj/hold77/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.08    0.59   19.84 ^ mprj/hold77/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.01                           mprj/net352 (net)
+                  0.08    0.00   19.84 ^ mprj/hold3/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                  0.20    0.39   20.23 ^ mprj/hold3/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+     3    0.02                           mprj/net278 (net)
+                  0.20    0.00   20.23 ^ mprj/hold78/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.11    0.66   20.88 ^ mprj/hold78/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.01                           mprj/net353 (net)
+                  0.11    0.00   20.88 ^ mprj/fanout144/A (sky130_fd_sc_hd__buf_8)
+                  0.22    0.25   21.13 ^ mprj/fanout144/X (sky130_fd_sc_hd__buf_8)
+    32    0.14                           mprj/net144 (net)
+                  0.22    0.01   21.14 ^ mprj/_185_/B1 (sky130_fd_sc_hd__o21a_1)
+                  0.05    0.17   21.31 ^ mprj/_185_/X (sky130_fd_sc_hd__o21a_1)
+     1    0.00                           mprj/_003_ (net)
+                  0.05    0.00   21.31 ^ mprj/hold142/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.06    0.57   21.88 ^ mprj/hold142/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.00                           mprj/net417 (net)
+                  0.06    0.00   21.88 ^ mprj/hold28/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.05    0.57   22.44 ^ mprj/hold28/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.00                           mprj/net303 (net)
+                  0.05    0.00   22.44 ^ mprj/hold143/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.06    0.57   23.01 ^ mprj/hold143/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.00                           mprj/net418 (net)
+                  0.06    0.00   23.01 ^ mprj/_279_/D (sky130_fd_sc_hd__dfxtp_4)
+                                 23.01   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+    12    0.01                           wb_clk_i (net)
+                  0.61    0.00   29.65 ^ mprj/_155_/A1 (sky130_fd_sc_hd__mux2_1)
+                  0.81    0.72   30.37 ^ mprj/_155_/X (sky130_fd_sc_hd__mux2_1)
+     2    0.09                           mprj/counter.clk (net)
+                  0.82    0.04   30.41 ^ mprj/clkbuf_0_counter.clk/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.14    0.34   30.75 ^ mprj/clkbuf_0_counter.clk/X (sky130_fd_sc_hd__clkbuf_16)
+     8    0.12                           mprj/clknet_0_counter.clk (net)
+                  0.14    0.01   30.76 ^ mprj/clkbuf_2_3_0_counter.clk/A (sky130_fd_sc_hd__clkbuf_8)
+                  0.16    0.23   30.99 ^ mprj/clkbuf_2_3_0_counter.clk/X (sky130_fd_sc_hd__clkbuf_8)
+    18    0.09                           mprj/clknet_2_3_0_counter.clk (net)
+                  0.16    0.01   31.00 ^ mprj/_279_/CLK (sky130_fd_sc_hd__dfxtp_4)
+                         -0.25   30.75   clock uncertainty
+                          0.00   30.75   clock reconvergence pessimism
+                         -0.05   30.71   library setup time
+                                 30.71   data required time
+-----------------------------------------------------------------------------
+                                 30.71   data required time
+                                -23.01   data arrival time
+-----------------------------------------------------------------------------
+                                  7.69   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Typical Corner ===================================
+
+max fanout
+
+Pin                                   Limit Fanout  Slack
+---------------------------------------------------------
+mprj/input37/X                           10     35    -25 (VIOLATED)
+mprj/input39/X                           10     35    -25 (VIOLATED)
+mprj/input40/X                           10     35    -25 (VIOLATED)
+mprj/_157_/Y                             10     32    -22 (VIOLATED)
+mprj/fanout124/X                         10     32    -22 (VIOLATED)
+mprj/fanout144/X                         10     32    -22 (VIOLATED)
+mprj/input46/X                           10     32    -22 (VIOLATED)
+mprj/input47/X                           10     32    -22 (VIOLATED)
+mprj/input48/X                           10     29    -19 (VIOLATED)
+mprj/input49/X                           10     29    -19 (VIOLATED)
+mprj/input51/X                           10     26    -16 (VIOLATED)
+mprj/input52/X                           10     26    -16 (VIOLATED)
+mprj/input41/X                           10     23    -13 (VIOLATED)
+mprj/input42/X                           10     23    -13 (VIOLATED)
+mprj/input53/X                           10     23    -13 (VIOLATED)
+mprj/input54/X                           10     23    -13 (VIOLATED)
+mprj/_277_/Q                             10     20    -10 (VIOLATED)
+mprj/_289_/Q                             10     20    -10 (VIOLATED)
+mprj/input43/X                           10     20    -10 (VIOLATED)
+mprj/input44/X                           10     20    -10 (VIOLATED)
+mprj/_278_/Q                             10     18     -8 (VIOLATED)
+mprj/clkbuf_2_1_0_counter.clk/X          10     18     -8 (VIOLATED)
+mprj/clkbuf_2_3_0_counter.clk/X          10     18     -8 (VIOLATED)
+mprj/clkbuf_2_2_0_counter.clk/X          10     16     -6 (VIOLATED)
+mprj/wire125/X                           10     16     -6 (VIOLATED)
+mprj/wire126/X                           10     16     -6 (VIOLATED)
+mprj/_279_/Q                             10     14     -4 (VIOLATED)
+mprj/_287_/Q                             10     14     -4 (VIOLATED)
+mprj/_290_/Q                             10     14     -4 (VIOLATED)
+mprj/clkbuf_2_0_0_counter.clk/X          10     14     -4 (VIOLATED)
+mprj/input38/X                           10     14     -4 (VIOLATED)
+mprj/input57/X                           10     14     -4 (VIOLATED)
+wb_clk_i                                 10     12     -2 (VIOLATED)
+mprj/_158_/Y                             10     12     -2 (VIOLATED)
+mprj/_285_/Q                             10     12     -2 (VIOLATED)
+mprj/load_slew139/X                      10     12     -2 (VIOLATED)
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 469 unannotated drivers.
+ analog_io[0]
+ analog_io[10]
+ analog_io[11]
+ analog_io[12]
+ analog_io[13]
+ analog_io[14]
+ analog_io[15]
+ analog_io[16]
+ analog_io[17]
+ analog_io[18]
+ analog_io[19]
+ analog_io[1]
+ analog_io[20]
+ analog_io[21]
+ analog_io[22]
+ analog_io[23]
+ analog_io[24]
+ analog_io[25]
+ analog_io[26]
+ analog_io[27]
+ analog_io[28]
+ analog_io[2]
+ analog_io[3]
+ analog_io[4]
+ analog_io[5]
+ analog_io[6]
+ analog_io[7]
+ analog_io[8]
+ analog_io[9]
+ io_in[0]
+ io_in[10]
+ io_in[11]
+ io_in[12]
+ io_in[13]
+ io_in[14]
+ io_in[15]
+ io_in[16]
+ io_in[17]
+ io_in[18]
+ io_in[19]
+ io_in[1]
+ io_in[20]
+ io_in[21]
+ io_in[22]
+ io_in[23]
+ io_in[24]
+ io_in[25]
+ io_in[26]
+ io_in[27]
+ io_in[28]
+ io_in[29]
+ io_in[2]
+ io_in[30]
+ io_in[31]
+ io_in[32]
+ io_in[33]
+ io_in[34]
+ io_in[35]
+ io_in[36]
+ io_in[37]
+ io_in[3]
+ io_in[4]
+ io_in[5]
+ io_in[6]
+ io_in[7]
+ io_in[8]
+ io_in[9]
+ la_data_in[0]
+ la_data_in[100]
+ la_data_in[101]
+ la_data_in[102]
+ la_data_in[103]
+ la_data_in[104]
+ la_data_in[105]
+ la_data_in[106]
+ la_data_in[107]
+ la_data_in[108]
+ la_data_in[109]
+ la_data_in[10]
+ la_data_in[110]
+ la_data_in[111]
+ la_data_in[112]
+ la_data_in[113]
+ la_data_in[114]
+ la_data_in[115]
+ la_data_in[116]
+ la_data_in[117]
+ la_data_in[118]
+ la_data_in[119]
+ la_data_in[11]
+ la_data_in[120]
+ la_data_in[121]
+ la_data_in[122]
+ la_data_in[123]
+ la_data_in[124]
+ la_data_in[125]
+ la_data_in[126]
+ la_data_in[127]
+ la_data_in[12]
+ la_data_in[13]
+ la_data_in[14]
+ la_data_in[15]
+ la_data_in[16]
+ la_data_in[17]
+ la_data_in[18]
+ la_data_in[19]
+ la_data_in[1]
+ la_data_in[20]
+ la_data_in[21]
+ la_data_in[22]
+ la_data_in[23]
+ la_data_in[24]
+ la_data_in[25]
+ la_data_in[26]
+ la_data_in[27]
+ la_data_in[28]
+ la_data_in[29]
+ la_data_in[2]
+ la_data_in[30]
+ la_data_in[31]
+ la_data_in[32]
+ la_data_in[33]
+ la_data_in[34]
+ la_data_in[35]
+ la_data_in[36]
+ la_data_in[37]
+ la_data_in[38]
+ la_data_in[39]
+ la_data_in[3]
+ la_data_in[40]
+ la_data_in[41]
+ la_data_in[42]
+ la_data_in[43]
+ la_data_in[44]
+ la_data_in[45]
+ la_data_in[46]
+ la_data_in[47]
+ la_data_in[4]
+ la_data_in[5]
+ la_data_in[66]
+ la_data_in[67]
+ la_data_in[68]
+ la_data_in[69]
+ la_data_in[6]
+ la_data_in[70]
+ la_data_in[71]
+ la_data_in[72]
+ la_data_in[73]
+ la_data_in[74]
+ la_data_in[75]
+ la_data_in[76]
+ la_data_in[77]
+ la_data_in[78]
+ la_data_in[79]
+ la_data_in[7]
+ la_data_in[80]
+ la_data_in[81]
+ la_data_in[82]
+ la_data_in[83]
+ la_data_in[84]
+ la_data_in[85]
+ la_data_in[86]
+ la_data_in[87]
+ la_data_in[88]
+ la_data_in[89]
+ la_data_in[8]
+ la_data_in[90]
+ la_data_in[91]
+ la_data_in[92]
+ la_data_in[93]
+ la_data_in[94]
+ la_data_in[95]
+ la_data_in[96]
+ la_data_in[97]
+ la_data_in[98]
+ la_data_in[99]
+ la_data_in[9]
+ la_oenb[0]
+ la_oenb[100]
+ la_oenb[101]
+ la_oenb[102]
+ la_oenb[103]
+ la_oenb[104]
+ la_oenb[105]
+ la_oenb[106]
+ la_oenb[107]
+ la_oenb[108]
+ la_oenb[109]
+ la_oenb[10]
+ la_oenb[110]
+ la_oenb[111]
+ la_oenb[112]
+ la_oenb[113]
+ la_oenb[114]
+ la_oenb[115]
+ la_oenb[116]
+ la_oenb[117]
+ la_oenb[118]
+ la_oenb[119]
+ la_oenb[11]
+ la_oenb[120]
+ la_oenb[121]
+ la_oenb[122]
+ la_oenb[123]
+ la_oenb[124]
+ la_oenb[125]
+ la_oenb[126]
+ la_oenb[127]
+ la_oenb[12]
+ la_oenb[13]
+ la_oenb[14]
+ la_oenb[15]
+ la_oenb[16]
+ la_oenb[17]
+ la_oenb[18]
+ la_oenb[19]
+ la_oenb[1]
+ la_oenb[20]
+ la_oenb[21]
+ la_oenb[22]
+ la_oenb[23]
+ la_oenb[24]
+ la_oenb[25]
+ la_oenb[26]
+ la_oenb[27]
+ la_oenb[28]
+ la_oenb[29]
+ la_oenb[2]
+ la_oenb[30]
+ la_oenb[31]
+ la_oenb[32]
+ la_oenb[33]
+ la_oenb[34]
+ la_oenb[35]
+ la_oenb[36]
+ la_oenb[37]
+ la_oenb[38]
+ la_oenb[39]
+ la_oenb[3]
+ la_oenb[40]
+ la_oenb[41]
+ la_oenb[42]
+ la_oenb[43]
+ la_oenb[44]
+ la_oenb[45]
+ la_oenb[46]
+ la_oenb[47]
+ la_oenb[4]
+ la_oenb[5]
+ la_oenb[66]
+ la_oenb[67]
+ la_oenb[68]
+ la_oenb[69]
+ la_oenb[6]
+ la_oenb[70]
+ la_oenb[71]
+ la_oenb[72]
+ la_oenb[73]
+ la_oenb[74]
+ la_oenb[75]
+ la_oenb[76]
+ la_oenb[77]
+ la_oenb[78]
+ la_oenb[79]
+ la_oenb[7]
+ la_oenb[80]
+ la_oenb[81]
+ la_oenb[82]
+ la_oenb[83]
+ la_oenb[84]
+ la_oenb[85]
+ la_oenb[86]
+ la_oenb[87]
+ la_oenb[88]
+ la_oenb[89]
+ la_oenb[8]
+ la_oenb[90]
+ la_oenb[91]
+ la_oenb[92]
+ la_oenb[93]
+ la_oenb[94]
+ la_oenb[95]
+ la_oenb[96]
+ la_oenb[97]
+ la_oenb[98]
+ la_oenb[99]
+ la_oenb[9]
+ user_clock2
+ wbs_adr_i[0]
+ wbs_adr_i[10]
+ wbs_adr_i[11]
+ wbs_adr_i[12]
+ wbs_adr_i[13]
+ wbs_adr_i[14]
+ wbs_adr_i[15]
+ wbs_adr_i[16]
+ wbs_adr_i[17]
+ wbs_adr_i[18]
+ wbs_adr_i[19]
+ wbs_adr_i[1]
+ wbs_adr_i[20]
+ wbs_adr_i[21]
+ wbs_adr_i[22]
+ wbs_adr_i[23]
+ wbs_adr_i[24]
+ wbs_adr_i[25]
+ wbs_adr_i[26]
+ wbs_adr_i[27]
+ wbs_adr_i[28]
+ wbs_adr_i[29]
+ wbs_adr_i[2]
+ wbs_adr_i[30]
+ wbs_adr_i[31]
+ wbs_adr_i[3]
+ wbs_adr_i[4]
+ wbs_adr_i[5]
+ wbs_adr_i[6]
+ wbs_adr_i[7]
+ wbs_adr_i[8]
+ wbs_adr_i[9]
+ wbs_dat_i[16]
+ wbs_dat_i[17]
+ wbs_dat_i[18]
+ wbs_dat_i[19]
+ wbs_dat_i[20]
+ wbs_dat_i[21]
+ wbs_dat_i[22]
+ wbs_dat_i[23]
+ wbs_dat_i[24]
+ wbs_dat_i[25]
+ wbs_dat_i[26]
+ wbs_dat_i[27]
+ wbs_dat_i[28]
+ wbs_dat_i[29]
+ wbs_dat_i[30]
+ wbs_dat_i[31]
+ wbs_sel_i[2]
+ wbs_sel_i[3]
+ mprj/user_proj_example_145/HI
+ mprj/user_proj_example_146/HI
+ mprj/user_proj_example_147/HI
+ mprj/user_proj_example_148/HI
+ mprj/user_proj_example_149/HI
+ mprj/user_proj_example_150/HI
+ mprj/user_proj_example_151/HI
+ mprj/user_proj_example_152/HI
+ mprj/user_proj_example_153/HI
+ mprj/user_proj_example_154/HI
+ mprj/user_proj_example_155/HI
+ mprj/user_proj_example_156/HI
+ mprj/user_proj_example_157/HI
+ mprj/user_proj_example_158/HI
+ mprj/user_proj_example_159/HI
+ mprj/user_proj_example_160/HI
+ mprj/user_proj_example_161/HI
+ mprj/user_proj_example_162/HI
+ mprj/user_proj_example_163/HI
+ mprj/user_proj_example_164/HI
+ mprj/user_proj_example_165/HI
+ mprj/user_proj_example_166/HI
+ mprj/user_proj_example_167/HI
+ mprj/user_proj_example_168/HI
+ mprj/user_proj_example_169/HI
+ mprj/user_proj_example_170/HI
+ mprj/user_proj_example_171/HI
+ mprj/user_proj_example_172/HI
+ mprj/user_proj_example_173/HI
+ mprj/user_proj_example_174/HI
+ mprj/user_proj_example_175/HI
+ mprj/user_proj_example_176/HI
+ mprj/user_proj_example_177/HI
+ mprj/user_proj_example_178/HI
+ mprj/user_proj_example_179/HI
+ mprj/user_proj_example_180/HI
+ mprj/user_proj_example_181/HI
+ mprj/user_proj_example_182/HI
+ mprj/user_proj_example_183/HI
+ mprj/user_proj_example_184/HI
+ mprj/user_proj_example_185/HI
+ mprj/user_proj_example_186/HI
+ mprj/user_proj_example_187/HI
+ mprj/user_proj_example_188/HI
+ mprj/user_proj_example_189/HI
+ mprj/user_proj_example_190/HI
+ mprj/user_proj_example_191/HI
+ mprj/user_proj_example_192/HI
+ mprj/user_proj_example_193/HI
+ mprj/user_proj_example_194/HI
+ mprj/user_proj_example_195/HI
+ mprj/user_proj_example_196/HI
+ mprj/user_proj_example_197/HI
+ mprj/user_proj_example_198/HI
+ mprj/user_proj_example_199/HI
+ mprj/user_proj_example_200/HI
+ mprj/user_proj_example_201/HI
+ mprj/user_proj_example_202/HI
+ mprj/user_proj_example_203/HI
+ mprj/user_proj_example_204/HI
+ mprj/user_proj_example_205/HI
+ mprj/user_proj_example_206/HI
+ mprj/user_proj_example_207/HI
+ mprj/user_proj_example_208/HI
+ mprj/user_proj_example_209/HI
+ mprj/user_proj_example_210/HI
+ mprj/user_proj_example_211/HI
+ mprj/user_proj_example_212/HI
+ mprj/user_proj_example_213/HI
+ mprj/user_proj_example_214/HI
+ mprj/user_proj_example_215/HI
+ mprj/user_proj_example_216/HI
+ mprj/user_proj_example_217/HI
+ mprj/user_proj_example_218/HI
+ mprj/user_proj_example_219/HI
+ mprj/user_proj_example_220/HI
+ mprj/user_proj_example_221/HI
+ mprj/user_proj_example_222/HI
+ mprj/user_proj_example_223/HI
+ mprj/user_proj_example_224/HI
+ mprj/user_proj_example_225/HI
+ mprj/user_proj_example_226/HI
+ mprj/user_proj_example_227/HI
+ mprj/user_proj_example_228/HI
+ mprj/user_proj_example_229/HI
+ mprj/user_proj_example_230/HI
+ mprj/user_proj_example_231/HI
+ mprj/user_proj_example_232/HI
+ mprj/user_proj_example_233/HI
+ mprj/user_proj_example_234/HI
+ mprj/user_proj_example_235/HI
+ mprj/user_proj_example_236/HI
+ mprj/user_proj_example_237/HI
+ mprj/user_proj_example_238/HI
+ mprj/user_proj_example_239/HI
+ mprj/user_proj_example_240/HI
+ mprj/user_proj_example_241/HI
+ mprj/user_proj_example_242/HI
+ mprj/user_proj_example_243/HI
+ mprj/user_proj_example_244/HI
+ mprj/user_proj_example_245/HI
+ mprj/user_proj_example_246/HI
+ mprj/user_proj_example_247/HI
+ mprj/user_proj_example_248/HI
+ mprj/user_proj_example_249/HI
+ mprj/user_proj_example_250/HI
+ mprj/user_proj_example_251/HI
+ mprj/user_proj_example_252/HI
+ mprj/user_proj_example_253/HI
+ mprj/user_proj_example_254/HI
+ mprj/user_proj_example_255/HI
+ mprj/user_proj_example_256/HI
+ mprj/user_proj_example_257/HI
+ mprj/user_proj_example_258/HI
+ mprj/user_proj_example_259/HI
+ mprj/user_proj_example_260/HI
+ mprj/user_proj_example_261/HI
+ mprj/user_proj_example_262/HI
+ mprj/user_proj_example_263/HI
+ mprj/user_proj_example_264/HI
+ mprj/user_proj_example_265/HI
+ mprj/user_proj_example_266/HI
+ mprj/user_proj_example_267/HI
+ mprj/user_proj_example_268/HI
+ mprj/user_proj_example_269/HI
+ mprj/user_proj_example_270/HI
+ mprj/user_proj_example_271/HI
+ mprj/user_proj_example_272/HI
+ mprj/user_proj_example_273/HI
+ mprj/user_proj_example_274/HI
+ mprj/user_proj_example_275/HI
+Found 255 partially unannotated drivers.
+ la_data_in[48]
+ la_data_in[49]
+ la_data_in[50]
+ la_data_in[51]
+ la_data_in[52]
+ la_data_in[53]
+ la_data_in[54]
+ la_data_in[55]
+ la_data_in[56]
+ la_data_in[57]
+ la_data_in[58]
+ la_data_in[59]
+ la_data_in[60]
+ la_data_in[61]
+ la_data_in[62]
+ la_data_in[63]
+ la_data_in[64]
+ la_data_in[65]
+ la_oenb[48]
+ la_oenb[49]
+ la_oenb[50]
+ la_oenb[51]
+ la_oenb[52]
+ la_oenb[53]
+ la_oenb[54]
+ la_oenb[55]
+ la_oenb[56]
+ la_oenb[57]
+ la_oenb[58]
+ la_oenb[59]
+ la_oenb[60]
+ la_oenb[61]
+ la_oenb[62]
+ la_oenb[63]
+ la_oenb[64]
+ la_oenb[65]
+ wb_clk_i
+ wb_rst_i
+ wbs_cyc_i
+ wbs_dat_i[0]
+ wbs_dat_i[10]
+ wbs_dat_i[11]
+ wbs_dat_i[12]
+ wbs_dat_i[13]
+ wbs_dat_i[14]
+ wbs_dat_i[15]
+ wbs_dat_i[1]
+ wbs_dat_i[2]
+ wbs_dat_i[3]
+ wbs_dat_i[4]
+ wbs_dat_i[5]
+ wbs_dat_i[6]
+ wbs_dat_i[7]
+ wbs_dat_i[8]
+ wbs_dat_i[9]
+ wbs_sel_i[0]
+ wbs_sel_i[1]
+ wbs_stb_i
+ wbs_we_i
+ mprj/output100/X
+  la_data_out[3]
+ mprj/output101/X
+  la_data_out[4]
+ mprj/output102/X
+  la_data_out[5]
+ mprj/output103/X
+  la_data_out[6]
+ mprj/output104/X
+  la_data_out[7]
+ mprj/output105/X
+  la_data_out[8]
+ mprj/output106/X
+  la_data_out[9]
+ mprj/output107/X
+  wbs_ack_o
+ mprj/output108/X
+  wbs_dat_o[0]
+ mprj/output109/X
+  wbs_dat_o[10]
+ mprj/output110/X
+  wbs_dat_o[11]
+ mprj/output111/X
+  wbs_dat_o[12]
+ mprj/output112/X
+  wbs_dat_o[13]
+ mprj/output113/X
+  wbs_dat_o[14]
+ mprj/output114/X
+  wbs_dat_o[15]
+ mprj/output115/X
+  wbs_dat_o[1]
+ mprj/output116/X
+  wbs_dat_o[2]
+ mprj/output117/X
+  wbs_dat_o[3]
+ mprj/output118/X
+  wbs_dat_o[4]
+ mprj/output119/X
+  wbs_dat_o[5]
+ mprj/output120/X
+  wbs_dat_o[6]
+ mprj/output121/X
+  wbs_dat_o[7]
+ mprj/output122/X
+  wbs_dat_o[8]
+ mprj/output123/X
+  wbs_dat_o[9]
+ mprj/output59/X
+  io_oeb[0]
+ mprj/output60/X
+  io_oeb[32]
+ mprj/output61/X
+  io_oeb[33]
+ mprj/output62/X
+  io_oeb[34]
+ mprj/output63/X
+  io_oeb[35]
+ mprj/output64/X
+  io_oeb[36]
+ mprj/output65/X
+  io_oeb[37]
+ mprj/output66/X
+  io_oeb[1]
+ mprj/output67/X
+  io_oeb[2]
+ mprj/output68/X
+  io_oeb[3]
+ mprj/output69/X
+  io_oeb[4]
+ mprj/output70/X
+  io_oeb[5]
+ mprj/output71/X
+  io_oeb[6]
+ mprj/output72/X
+  io_oeb[7]
+ mprj/output73/X
+  io_oeb[30]
+ mprj/output74/X
+  io_oeb[31]
+ mprj/output75/X
+  io_out[0]
+ mprj/output76/X
+  io_out[32]
+ mprj/output77/X
+  io_out[33]
+ mprj/output78/X
+  io_out[34]
+ mprj/output79/X
+  io_out[35]
+ mprj/output80/X
+  io_out[36]
+ mprj/output81/X
+  io_out[37]
+ mprj/output82/X
+  io_out[1]
+ mprj/output83/X
+  io_out[2]
+ mprj/output84/X
+  io_out[3]
+ mprj/output85/X
+  io_out[4]
+ mprj/output86/X
+  io_out[5]
+ mprj/output87/X
+  io_out[6]
+ mprj/output88/X
+  io_out[7]
+ mprj/output89/X
+  io_out[30]
+ mprj/output90/X
+  io_out[31]
+ mprj/output91/X
+  la_data_out[0]
+ mprj/output92/X
+  la_data_out[10]
+ mprj/output93/X
+  la_data_out[11]
+ mprj/output94/X
+  la_data_out[12]
+ mprj/output95/X
+  la_data_out[13]
+ mprj/output96/X
+  la_data_out[14]
+ mprj/output97/X
+  la_data_out[15]
+ mprj/output98/X
+  la_data_out[1]
+ mprj/output99/X
+  la_data_out[2]
+ mprj/user_proj_example_145/LO
+  la_data_out[48]
+ mprj/user_proj_example_146/LO
+  la_data_out[49]
+ mprj/user_proj_example_147/LO
+  la_data_out[50]
+ mprj/user_proj_example_148/LO
+  la_data_out[51]
+ mprj/user_proj_example_149/LO
+  la_data_out[52]
+ mprj/user_proj_example_150/LO
+  la_data_out[53]
+ mprj/user_proj_example_151/LO
+  la_data_out[54]
+ mprj/user_proj_example_152/LO
+  la_data_out[55]
+ mprj/user_proj_example_153/LO
+  la_data_out[56]
+ mprj/user_proj_example_154/LO
+  la_data_out[57]
+ mprj/user_proj_example_155/LO
+  la_data_out[58]
+ mprj/user_proj_example_156/LO
+  la_data_out[59]
+ mprj/user_proj_example_157/LO
+  la_data_out[60]
+ mprj/user_proj_example_158/LO
+  la_data_out[61]
+ mprj/user_proj_example_159/LO
+  la_data_out[62]
+ mprj/user_proj_example_160/LO
+  la_data_out[63]
+ mprj/user_proj_example_161/LO
+  la_data_out[64]
+ mprj/user_proj_example_162/LO
+  la_data_out[65]
+ mprj/user_proj_example_163/LO
+  la_data_out[66]
+ mprj/user_proj_example_164/LO
+  la_data_out[67]
+ mprj/user_proj_example_165/LO
+  la_data_out[68]
+ mprj/user_proj_example_166/LO
+  la_data_out[69]
+ mprj/user_proj_example_167/LO
+  la_data_out[70]
+ mprj/user_proj_example_168/LO
+  la_data_out[71]
+ mprj/user_proj_example_169/LO
+  la_data_out[72]
+ mprj/user_proj_example_170/LO
+  la_data_out[73]
+ mprj/user_proj_example_171/LO
+  la_data_out[74]
+ mprj/user_proj_example_172/LO
+  la_data_out[75]
+ mprj/user_proj_example_173/LO
+  la_data_out[76]
+ mprj/user_proj_example_174/LO
+  la_data_out[77]
+ mprj/user_proj_example_175/LO
+  la_data_out[78]
+ mprj/user_proj_example_176/LO
+  la_data_out[79]
+ mprj/user_proj_example_177/LO
+  la_data_out[80]
+ mprj/user_proj_example_178/LO
+  la_data_out[81]
+ mprj/user_proj_example_179/LO
+  la_data_out[82]
+ mprj/user_proj_example_180/LO
+  la_data_out[83]
+ mprj/user_proj_example_181/LO
+  la_data_out[84]
+ mprj/user_proj_example_182/LO
+  la_data_out[85]
+ mprj/user_proj_example_183/LO
+  la_data_out[86]
+ mprj/user_proj_example_184/LO
+  la_data_out[87]
+ mprj/user_proj_example_185/LO
+  la_data_out[88]
+ mprj/user_proj_example_186/LO
+  la_data_out[89]
+ mprj/user_proj_example_187/LO
+  la_data_out[90]
+ mprj/user_proj_example_188/LO
+  la_data_out[91]
+ mprj/user_proj_example_189/LO
+  la_data_out[92]
+ mprj/user_proj_example_190/LO
+  la_data_out[93]
+ mprj/user_proj_example_191/LO
+  la_data_out[94]
+ mprj/user_proj_example_192/LO
+  la_data_out[95]
+ mprj/user_proj_example_193/LO
+  la_data_out[96]
+ mprj/user_proj_example_194/LO
+  la_data_out[97]
+ mprj/user_proj_example_195/LO
+  la_data_out[98]
+ mprj/user_proj_example_196/LO
+  la_data_out[99]
+ mprj/user_proj_example_197/LO
+  la_data_out[100]
+ mprj/user_proj_example_198/LO
+  la_data_out[101]
+ mprj/user_proj_example_199/LO
+  la_data_out[102]
+ mprj/user_proj_example_200/LO
+  la_data_out[103]
+ mprj/user_proj_example_201/LO
+  la_data_out[104]
+ mprj/user_proj_example_202/LO
+  la_data_out[105]
+ mprj/user_proj_example_203/LO
+  la_data_out[106]
+ mprj/user_proj_example_204/LO
+  la_data_out[107]
+ mprj/user_proj_example_205/LO
+  la_data_out[108]
+ mprj/user_proj_example_206/LO
+  la_data_out[109]
+ mprj/user_proj_example_207/LO
+  la_data_out[110]
+ mprj/user_proj_example_208/LO
+  la_data_out[111]
+ mprj/user_proj_example_209/LO
+  la_data_out[112]
+ mprj/user_proj_example_210/LO
+  la_data_out[113]
+ mprj/user_proj_example_211/LO
+  la_data_out[114]
+ mprj/user_proj_example_212/LO
+  la_data_out[115]
+ mprj/user_proj_example_213/LO
+  la_data_out[116]
+ mprj/user_proj_example_214/LO
+  la_data_out[117]
+ mprj/user_proj_example_215/LO
+  la_data_out[118]
+ mprj/user_proj_example_216/LO
+  la_data_out[119]
+ mprj/user_proj_example_217/LO
+  la_data_out[120]
+ mprj/user_proj_example_218/LO
+  la_data_out[121]
+ mprj/user_proj_example_219/LO
+  la_data_out[122]
+ mprj/user_proj_example_220/LO
+  la_data_out[123]
+ mprj/user_proj_example_221/LO
+  la_data_out[124]
+ mprj/user_proj_example_222/LO
+  la_data_out[125]
+ mprj/user_proj_example_223/LO
+  la_data_out[126]
+ mprj/user_proj_example_224/LO
+  la_data_out[127]
+ mprj/user_proj_example_225/LO
+  wbs_dat_o[16]
+ mprj/user_proj_example_226/LO
+  wbs_dat_o[17]
+ mprj/user_proj_example_227/LO
+  wbs_dat_o[18]
+ mprj/user_proj_example_228/LO
+  wbs_dat_o[19]
+ mprj/user_proj_example_229/LO
+  wbs_dat_o[20]
+ mprj/user_proj_example_230/LO
+  wbs_dat_o[21]
+ mprj/user_proj_example_231/LO
+  wbs_dat_o[22]
+ mprj/user_proj_example_232/LO
+  wbs_dat_o[23]
+ mprj/user_proj_example_233/LO
+  wbs_dat_o[24]
+ mprj/user_proj_example_234/LO
+  wbs_dat_o[25]
+ mprj/user_proj_example_235/LO
+  wbs_dat_o[26]
+ mprj/user_proj_example_236/LO
+  wbs_dat_o[27]
+ mprj/user_proj_example_237/LO
+  wbs_dat_o[28]
+ mprj/user_proj_example_238/LO
+  wbs_dat_o[29]
+ mprj/user_proj_example_239/LO
+  wbs_dat_o[30]
+ mprj/user_proj_example_240/LO
+  wbs_dat_o[31]
+ mprj/user_proj_example_241/LO
+  user_irq[0]
+ mprj/user_proj_example_242/LO
+  user_irq[1]
+ mprj/user_proj_example_243/LO
+  user_irq[2]
+ mprj/user_proj_example_244/LO
+  la_data_out[16]
+ mprj/user_proj_example_245/LO
+  la_data_out[17]
+ mprj/user_proj_example_246/LO
+  la_data_out[18]
+ mprj/user_proj_example_247/LO
+  la_data_out[19]
+ mprj/user_proj_example_248/LO
+  la_data_out[20]
+ mprj/user_proj_example_249/LO
+  la_data_out[21]
+ mprj/user_proj_example_250/LO
+  la_data_out[22]
+ mprj/user_proj_example_251/LO
+  la_data_out[23]
+ mprj/user_proj_example_252/LO
+  la_data_out[24]
+ mprj/user_proj_example_253/LO
+  la_data_out[25]
+ mprj/user_proj_example_254/LO
+  la_data_out[26]
+ mprj/user_proj_example_255/LO
+  la_data_out[27]
+ mprj/user_proj_example_256/LO
+  la_data_out[28]
+ mprj/user_proj_example_257/LO
+  la_data_out[29]
+ mprj/user_proj_example_258/LO
+  la_data_out[30]
+ mprj/user_proj_example_259/LO
+  la_data_out[31]
+ mprj/user_proj_example_260/LO
+  la_data_out[32]
+ mprj/user_proj_example_261/LO
+  la_data_out[33]
+ mprj/user_proj_example_262/LO
+  la_data_out[34]
+ mprj/user_proj_example_263/LO
+  la_data_out[35]
+ mprj/user_proj_example_264/LO
+  la_data_out[36]
+ mprj/user_proj_example_265/LO
+  la_data_out[37]
+ mprj/user_proj_example_266/LO
+  la_data_out[38]
+ mprj/user_proj_example_267/LO
+  la_data_out[39]
+ mprj/user_proj_example_268/LO
+  la_data_out[40]
+ mprj/user_proj_example_269/LO
+  la_data_out[41]
+ mprj/user_proj_example_270/LO
+  la_data_out[42]
+ mprj/user_proj_example_271/LO
+  la_data_out[43]
+ mprj/user_proj_example_272/LO
+  la_data_out[44]
+ mprj/user_proj_example_273/LO
+  la_data_out[45]
+ mprj/user_proj_example_274/LO
+  la_data_out[46]
+ mprj/user_proj_example_275/LO
+  la_data_out[47]
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 36
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 68 input ports missing set_input_delay.
+  analog_io[0]
+  analog_io[10]
+  analog_io[11]
+  analog_io[12]
+  analog_io[13]
+  analog_io[14]
+  analog_io[15]
+  analog_io[16]
+  analog_io[17]
+  analog_io[18]
+  analog_io[19]
+  analog_io[1]
+  analog_io[20]
+  analog_io[21]
+  analog_io[22]
+  analog_io[23]
+  analog_io[24]
+  analog_io[25]
+  analog_io[26]
+  analog_io[27]
+  analog_io[28]
+  analog_io[2]
+  analog_io[3]
+  analog_io[4]
+  analog_io[5]
+  analog_io[6]
+  analog_io[7]
+  analog_io[8]
+  analog_io[9]
+  io_in[0]
+  io_in[10]
+  io_in[11]
+  io_in[12]
+  io_in[13]
+  io_in[14]
+  io_in[15]
+  io_in[16]
+  io_in[17]
+  io_in[18]
+  io_in[19]
+  io_in[1]
+  io_in[20]
+  io_in[21]
+  io_in[22]
+  io_in[23]
+  io_in[24]
+  io_in[25]
+  io_in[26]
+  io_in[27]
+  io_in[28]
+  io_in[29]
+  io_in[2]
+  io_in[30]
+  io_in[31]
+  io_in[32]
+  io_in[33]
+  io_in[34]
+  io_in[35]
+  io_in[36]
+  io_in[37]
+  io_in[3]
+  io_in[4]
+  io_in[5]
+  io_in[6]
+  io_in[7]
+  io_in[8]
+  io_in[9]
+  user_clock2
+Warning: There are 236 unconstrained endpoints.
+  analog_io[0]
+  analog_io[10]
+  analog_io[11]
+  analog_io[12]
+  analog_io[13]
+  analog_io[14]
+  analog_io[15]
+  analog_io[16]
+  analog_io[17]
+  analog_io[18]
+  analog_io[19]
+  analog_io[1]
+  analog_io[20]
+  analog_io[21]
+  analog_io[22]
+  analog_io[23]
+  analog_io[24]
+  analog_io[25]
+  analog_io[26]
+  analog_io[27]
+  analog_io[28]
+  analog_io[2]
+  analog_io[3]
+  analog_io[4]
+  analog_io[5]
+  analog_io[6]
+  analog_io[7]
+  analog_io[8]
+  analog_io[9]
+  io_oeb[0]
+  io_oeb[10]
+  io_oeb[11]
+  io_oeb[12]
+  io_oeb[13]
+  io_oeb[14]
+  io_oeb[15]
+  io_oeb[16]
+  io_oeb[17]
+  io_oeb[18]
+  io_oeb[19]
+  io_oeb[1]
+  io_oeb[20]
+  io_oeb[21]
+  io_oeb[22]
+  io_oeb[23]
+  io_oeb[24]
+  io_oeb[25]
+  io_oeb[26]
+  io_oeb[27]
+  io_oeb[28]
+  io_oeb[29]
+  io_oeb[2]
+  io_oeb[30]
+  io_oeb[31]
+  io_oeb[32]
+  io_oeb[33]
+  io_oeb[34]
+  io_oeb[35]
+  io_oeb[36]
+  io_oeb[37]
+  io_oeb[3]
+  io_oeb[4]
+  io_oeb[5]
+  io_oeb[6]
+  io_oeb[7]
+  io_oeb[8]
+  io_oeb[9]
+  io_out[0]
+  io_out[10]
+  io_out[11]
+  io_out[12]
+  io_out[13]
+  io_out[14]
+  io_out[15]
+  io_out[16]
+  io_out[17]
+  io_out[18]
+  io_out[19]
+  io_out[1]
+  io_out[20]
+  io_out[21]
+  io_out[22]
+  io_out[23]
+  io_out[24]
+  io_out[25]
+  io_out[26]
+  io_out[27]
+  io_out[28]
+  io_out[29]
+  io_out[2]
+  io_out[30]
+  io_out[31]
+  io_out[32]
+  io_out[33]
+  io_out[34]
+  io_out[35]
+  io_out[36]
+  io_out[37]
+  io_out[3]
+  io_out[4]
+  io_out[5]
+  io_out[6]
+  io_out[7]
+  io_out[8]
+  io_out[9]
+  la_data_out[100]
+  la_data_out[101]
+  la_data_out[102]
+  la_data_out[103]
+  la_data_out[104]
+  la_data_out[105]
+  la_data_out[106]
+  la_data_out[107]
+  la_data_out[108]
+  la_data_out[109]
+  la_data_out[110]
+  la_data_out[111]
+  la_data_out[112]
+  la_data_out[113]
+  la_data_out[114]
+  la_data_out[115]
+  la_data_out[116]
+  la_data_out[117]
+  la_data_out[118]
+  la_data_out[119]
+  la_data_out[120]
+  la_data_out[121]
+  la_data_out[122]
+  la_data_out[123]
+  la_data_out[124]
+  la_data_out[125]
+  la_data_out[126]
+  la_data_out[127]
+  la_data_out[16]
+  la_data_out[17]
+  la_data_out[18]
+  la_data_out[19]
+  la_data_out[20]
+  la_data_out[21]
+  la_data_out[22]
+  la_data_out[23]
+  la_data_out[24]
+  la_data_out[25]
+  la_data_out[26]
+  la_data_out[27]
+  la_data_out[28]
+  la_data_out[29]
+  la_data_out[30]
+  la_data_out[31]
+  la_data_out[32]
+  la_data_out[33]
+  la_data_out[34]
+  la_data_out[35]
+  la_data_out[36]
+  la_data_out[37]
+  la_data_out[38]
+  la_data_out[39]
+  la_data_out[40]
+  la_data_out[41]
+  la_data_out[42]
+  la_data_out[43]
+  la_data_out[44]
+  la_data_out[45]
+  la_data_out[46]
+  la_data_out[47]
+  la_data_out[48]
+  la_data_out[49]
+  la_data_out[50]
+  la_data_out[51]
+  la_data_out[52]
+  la_data_out[53]
+  la_data_out[54]
+  la_data_out[55]
+  la_data_out[56]
+  la_data_out[57]
+  la_data_out[58]
+  la_data_out[59]
+  la_data_out[60]
+  la_data_out[61]
+  la_data_out[62]
+  la_data_out[63]
+  la_data_out[64]
+  la_data_out[65]
+  la_data_out[66]
+  la_data_out[67]
+  la_data_out[68]
+  la_data_out[69]
+  la_data_out[70]
+  la_data_out[71]
+  la_data_out[72]
+  la_data_out[73]
+  la_data_out[74]
+  la_data_out[75]
+  la_data_out[76]
+  la_data_out[77]
+  la_data_out[78]
+  la_data_out[79]
+  la_data_out[80]
+  la_data_out[81]
+  la_data_out[82]
+  la_data_out[83]
+  la_data_out[84]
+  la_data_out[85]
+  la_data_out[86]
+  la_data_out[87]
+  la_data_out[88]
+  la_data_out[89]
+  la_data_out[90]
+  la_data_out[91]
+  la_data_out[92]
+  la_data_out[93]
+  la_data_out[94]
+  la_data_out[95]
+  la_data_out[96]
+  la_data_out[97]
+  la_data_out[98]
+  la_data_out[99]
+  user_irq[0]
+  user_irq[1]
+  user_irq[2]
+  wbs_dat_o[16]
+  wbs_dat_o[17]
+  wbs_dat_o[18]
+  wbs_dat_o[19]
+  wbs_dat_o[20]
+  wbs_dat_o[21]
+  wbs_dat_o[22]
+  wbs_dat_o[23]
+  wbs_dat_o[24]
+  wbs_dat_o[25]
+  wbs_dat_o[26]
+  wbs_dat_o[27]
+  wbs_dat_o[28]
+  wbs_dat_o[29]
+  wbs_dat_o[30]
+  wbs_dat_o[31]

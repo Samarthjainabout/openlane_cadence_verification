@@ -1,0 +1,2733 @@
+
+===========================================================================
+report_checks -path_delay max (Setup)
+============================================================================
+======================= Typical Corner ===================================
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[4] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.30   13.89 ^ mprj/wbs_dat_o[4] (user_proj_example)
+     1    0.20                           wbs_dat_o[4] (net)
+                  0.21    0.02   13.91 ^ wbs_dat_o[4] (out)
+                                 13.91   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.91   data arrival time
+-----------------------------------------------------------------------------
+                                 11.87   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.29   13.87 ^ mprj/wbs_dat_o[0] (user_proj_example)
+     1    0.20                           wbs_dat_o[0] (net)
+                  0.21    0.02   13.89 ^ wbs_dat_o[0] (out)
+                                 13.89   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.89   data arrival time
+-----------------------------------------------------------------------------
+                                 11.89   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[1] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.28   13.86 ^ mprj/wbs_dat_o[1] (user_proj_example)
+     1    0.20                           wbs_dat_o[1] (net)
+                  0.21    0.02   13.88 ^ wbs_dat_o[1] (out)
+                                 13.88   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.88   data arrival time
+-----------------------------------------------------------------------------
+                                 11.90   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[2] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.27   13.85 ^ mprj/wbs_dat_o[2] (user_proj_example)
+     1    0.20                           wbs_dat_o[2] (net)
+                  0.21    0.02   13.87 ^ wbs_dat_o[2] (out)
+                                 13.87   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.87   data arrival time
+-----------------------------------------------------------------------------
+                                 11.91   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[5] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.25   13.83 ^ mprj/wbs_dat_o[5] (user_proj_example)
+     1    0.20                           wbs_dat_o[5] (net)
+                  0.21    0.02   13.85 ^ wbs_dat_o[5] (out)
+                                 13.85   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.85   data arrival time
+-----------------------------------------------------------------------------
+                                 11.93   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[3] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.24   13.82 ^ mprj/wbs_dat_o[3] (user_proj_example)
+     1    0.20                           wbs_dat_o[3] (net)
+                  0.21    0.02   13.84 ^ wbs_dat_o[3] (out)
+                                 13.84   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.84   data arrival time
+-----------------------------------------------------------------------------
+                                 11.94   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[6] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.18   13.76 ^ mprj/wbs_dat_o[6] (user_proj_example)
+     1    0.20                           wbs_dat_o[6] (net)
+                  0.21    0.02   13.78 ^ wbs_dat_o[6] (out)
+                                 13.78   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.78   data arrival time
+-----------------------------------------------------------------------------
+                                 12.00   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.16   13.74 ^ mprj/wbs_dat_o[7] (user_proj_example)
+     1    0.20                           wbs_dat_o[7] (net)
+                  0.21    0.02   13.76 ^ wbs_dat_o[7] (out)
+                                 13.76   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.76   data arrival time
+-----------------------------------------------------------------------------
+                                 12.02   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[8] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.15   13.73 ^ mprj/wbs_dat_o[8] (user_proj_example)
+     1    0.20                           wbs_dat_o[8] (net)
+                  0.21    0.02   13.75 ^ wbs_dat_o[8] (out)
+                                 13.75   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.75   data arrival time
+-----------------------------------------------------------------------------
+                                 12.03   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[10] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.15   13.73 ^ mprj/wbs_dat_o[10] (user_proj_example)
+     1    0.20                           wbs_dat_o[10] (net)
+                  0.21    0.02   13.75 ^ wbs_dat_o[10] (out)
+                                 13.75   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.75   data arrival time
+-----------------------------------------------------------------------------
+                                 12.03   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[9] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.13   13.71 ^ mprj/wbs_dat_o[9] (user_proj_example)
+     1    0.20                           wbs_dat_o[9] (net)
+                  0.22    0.02   13.73 ^ wbs_dat_o[9] (out)
+                                 13.73   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.73   data arrival time
+-----------------------------------------------------------------------------
+                                 12.05   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[11] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.13   13.71 ^ mprj/wbs_dat_o[11] (user_proj_example)
+     1    0.20                           wbs_dat_o[11] (net)
+                  0.21    0.02   13.73 ^ wbs_dat_o[11] (out)
+                                 13.73   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.73   data arrival time
+-----------------------------------------------------------------------------
+                                 12.05   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[14] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.12   13.70 ^ mprj/wbs_dat_o[14] (user_proj_example)
+     1    0.20                           wbs_dat_o[14] (net)
+                  0.21    0.02   13.72 ^ wbs_dat_o[14] (out)
+                                 13.72   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.72   data arrival time
+-----------------------------------------------------------------------------
+                                 12.06   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[12] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.11   13.70 ^ mprj/wbs_dat_o[12] (user_proj_example)
+     1    0.20                           wbs_dat_o[12] (net)
+                  0.21    0.02   13.71 ^ wbs_dat_o[12] (out)
+                                 13.71   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.71   data arrival time
+-----------------------------------------------------------------------------
+                                 12.07   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[13] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.11   13.70 ^ mprj/wbs_dat_o[13] (user_proj_example)
+     1    0.20                           wbs_dat_o[13] (net)
+                  0.22    0.02   13.71 ^ wbs_dat_o[13] (out)
+                                 13.71   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.71   data arrival time
+-----------------------------------------------------------------------------
+                                 12.07   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_dat_o[15] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    8.11   13.70 ^ mprj/wbs_dat_o[15] (user_proj_example)
+     1    0.20                           wbs_dat_o[15] (net)
+                  0.21    0.02   13.71 ^ wbs_dat_o[15] (out)
+                                 13.71   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -3.62   25.78   output external delay
+                                 25.78   data required time
+-----------------------------------------------------------------------------
+                                 25.78   data required time
+                                -13.71   data arrival time
+-----------------------------------------------------------------------------
+                                 12.07   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[2] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21   10.25   15.83 ^ mprj/la_data_out[2] (user_proj_example)
+     1    0.20                           la_data_out[2] (net)
+                  0.21    0.01   15.84 ^ la_data_out[2] (out)
+                                 15.84   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.84   data arrival time
+-----------------------------------------------------------------------------
+                                 12.56   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21   10.14   15.72 ^ mprj/la_data_out[0] (user_proj_example)
+     1    0.20                           la_data_out[0] (net)
+                  0.21    0.01   15.73 ^ la_data_out[0] (out)
+                                 15.73   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.73   data arrival time
+-----------------------------------------------------------------------------
+                                 12.67   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[1] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21   10.12   15.70 ^ mprj/la_data_out[1] (user_proj_example)
+     1    0.20                           la_data_out[1] (net)
+                  0.21    0.01   15.72 ^ la_data_out[1] (out)
+                                 15.72   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.72   data arrival time
+-----------------------------------------------------------------------------
+                                 12.68   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[3] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21   10.11   15.69 ^ mprj/la_data_out[3] (user_proj_example)
+     1    0.20                           la_data_out[3] (net)
+                  0.21    0.01   15.71 ^ la_data_out[3] (out)
+                                 15.71   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.71   data arrival time
+-----------------------------------------------------------------------------
+                                 12.69   slack (MET)
+
+
+Startpoint: wb_rst_i (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                         12.50   18.07 v input external delay
+                  0.00    0.00   18.07 v wb_rst_i (in)
+     1    0.02                           wb_rst_i (net)
+                  0.00    0.00   18.07 v mprj/wb_rst_i (user_proj_example)
+                                 18.07   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.42   30.83   library setup time
+                                 30.83   data required time
+-----------------------------------------------------------------------------
+                                 30.83   data required time
+                                -18.07   data arrival time
+-----------------------------------------------------------------------------
+                                 12.76   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[6] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.99   15.57 ^ mprj/la_data_out[6] (user_proj_example)
+     1    0.20                           la_data_out[6] (net)
+                  0.21    0.01   15.58 ^ la_data_out[6] (out)
+                                 15.58   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.58   data arrival time
+-----------------------------------------------------------------------------
+                                 12.82   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[13] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.91   15.50 ^ mprj/la_data_out[13] (user_proj_example)
+     1    0.20                           la_data_out[13] (net)
+                  0.21    0.01   15.51 ^ la_data_out[13] (out)
+                                 15.51   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.51   data arrival time
+-----------------------------------------------------------------------------
+                                 12.89   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[14] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.90   15.48 ^ mprj/la_data_out[14] (user_proj_example)
+     1    0.20                           la_data_out[14] (net)
+                  0.21    0.01   15.49 ^ la_data_out[14] (out)
+                                 15.49   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.49   data arrival time
+-----------------------------------------------------------------------------
+                                 12.91   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[10] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.89   15.47 ^ mprj/la_data_out[10] (user_proj_example)
+     1    0.20                           la_data_out[10] (net)
+                  0.21    0.01   15.48 ^ la_data_out[10] (out)
+                                 15.48   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.48   data arrival time
+-----------------------------------------------------------------------------
+                                 12.92   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[15] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.88   15.46 ^ mprj/la_data_out[15] (user_proj_example)
+     1    0.20                           la_data_out[15] (net)
+                  0.21    0.01   15.47 ^ la_data_out[15] (out)
+                                 15.47   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.47   data arrival time
+-----------------------------------------------------------------------------
+                                 12.93   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.87   15.45 ^ mprj/la_data_out[7] (user_proj_example)
+     1    0.20                           la_data_out[7] (net)
+                  0.21    0.01   15.46 ^ la_data_out[7] (out)
+                                 15.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.46   data arrival time
+-----------------------------------------------------------------------------
+                                 12.94   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[8] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.82   15.40 ^ mprj/la_data_out[8] (user_proj_example)
+     1    0.20                           la_data_out[8] (net)
+                  0.21    0.01   15.41 ^ la_data_out[8] (out)
+                                 15.41   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.41   data arrival time
+-----------------------------------------------------------------------------
+                                 12.99   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[9] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.78   15.37 ^ mprj/la_data_out[9] (user_proj_example)
+     1    0.20                           la_data_out[9] (net)
+                  0.21    0.01   15.38 ^ la_data_out[9] (out)
+                                 15.38   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.38   data arrival time
+-----------------------------------------------------------------------------
+                                 13.02   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[5] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.54   15.13 ^ mprj/la_data_out[5] (user_proj_example)
+     1    0.20                           la_data_out[5] (net)
+                  0.21    0.01   15.14 ^ la_data_out[5] (out)
+                                 15.14   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.14   data arrival time
+-----------------------------------------------------------------------------
+                                 13.26   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[4] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.46   15.05 ^ mprj/la_data_out[4] (user_proj_example)
+     1    0.20                           la_data_out[4] (net)
+                  0.21    0.01   15.06 ^ la_data_out[4] (out)
+                                 15.06   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -15.06   data arrival time
+-----------------------------------------------------------------------------
+                                 13.34   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[12] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.39   14.98 ^ mprj/la_data_out[12] (user_proj_example)
+     1    0.20                           la_data_out[12] (net)
+                  0.21    0.01   14.99 ^ la_data_out[12] (out)
+                                 14.99   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -14.99   data arrival time
+-----------------------------------------------------------------------------
+                                 13.41   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[11] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.21    9.29   14.87 ^ mprj/la_data_out[11] (user_proj_example)
+     1    0.20                           la_data_out[11] (net)
+                  0.21    0.01   14.88 ^ la_data_out[11] (out)
+                                 14.88   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -14.88   data arrival time
+-----------------------------------------------------------------------------
+                                 13.52   slack (MET)
+
+
+Startpoint: wbs_dat_i[3] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[3] (in)
+     1    0.02                           wbs_dat_i[3] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[3] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.17   31.58   library setup time
+                                 31.58   data required time
+-----------------------------------------------------------------------------
+                                 31.58   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.40   slack (MET)
+
+
+Startpoint: wbs_dat_i[7] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[7] (in)
+     1    0.02                           wbs_dat_i[7] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[7] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.26   31.67   library setup time
+                                 31.67   data required time
+-----------------------------------------------------------------------------
+                                 31.67   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.49   slack (MET)
+
+
+Startpoint: wbs_dat_i[6] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[6] (in)
+     1    0.02                           wbs_dat_i[6] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[6] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.29   31.71   library setup time
+                                 31.71   data required time
+-----------------------------------------------------------------------------
+                                 31.71   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.52   slack (MET)
+
+
+Startpoint: wbs_dat_i[4] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[4] (in)
+     1    0.02                           wbs_dat_i[4] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[4] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.34   31.76   library setup time
+                                 31.76   data required time
+-----------------------------------------------------------------------------
+                                 31.76   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.57   slack (MET)
+
+
+Startpoint: wbs_dat_i[10] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[10] (in)
+     1    0.01                           wbs_dat_i[10] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[10] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.56   31.97   library setup time
+                                 31.97   data required time
+-----------------------------------------------------------------------------
+                                 31.97   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.79   slack (MET)
+
+
+Startpoint: wbs_dat_i[13] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[13] (in)
+     1    0.01                           wbs_dat_i[13] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[13] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.56   31.97   library setup time
+                                 31.97   data required time
+-----------------------------------------------------------------------------
+                                 31.97   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.79   slack (MET)
+
+
+Startpoint: wbs_dat_i[11] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[11] (in)
+     1    0.01                           wbs_dat_i[11] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[11] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.57   31.98   library setup time
+                                 31.98   data required time
+-----------------------------------------------------------------------------
+                                 31.98   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.80   slack (MET)
+
+
+Startpoint: wbs_dat_i[1] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[1] (in)
+     1    0.02                           wbs_dat_i[1] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[1] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.57   31.98   library setup time
+                                 31.98   data required time
+-----------------------------------------------------------------------------
+                                 31.98   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.80   slack (MET)
+
+
+Startpoint: wbs_dat_i[15] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[15] (in)
+     1    0.01                           wbs_dat_i[15] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[15] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.58   31.99   library setup time
+                                 31.99   data required time
+-----------------------------------------------------------------------------
+                                 31.99   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.81   slack (MET)
+
+
+Startpoint: wbs_dat_i[9] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[9] (in)
+     1    0.02                           wbs_dat_i[9] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[9] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.59   32.00   library setup time
+                                 32.00   data required time
+-----------------------------------------------------------------------------
+                                 32.00   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.82   slack (MET)
+
+
+Startpoint: wbs_dat_i[12] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[12] (in)
+     1    0.01                           wbs_dat_i[12] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[12] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.61   32.02   library setup time
+                                 32.02   data required time
+-----------------------------------------------------------------------------
+                                 32.02   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.84   slack (MET)
+
+
+Startpoint: la_data_in[65] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[65] (in)
+     1    0.01                           la_data_in[65] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[65] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                         -0.11   29.30   library setup time
+                                 29.30   data required time
+-----------------------------------------------------------------------------
+                                 29.30   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 21.86   slack (MET)
+
+
+Startpoint: wbs_dat_i[14] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[14] (in)
+     1    0.01                           wbs_dat_i[14] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[14] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.66   32.07   library setup time
+                                 32.07   data required time
+-----------------------------------------------------------------------------
+                                 32.07   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.89   slack (MET)
+
+
+Startpoint: wbs_dat_i[5] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[5] (in)
+     1    0.02                           wbs_dat_i[5] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[5] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.69   32.10   library setup time
+                                 32.10   data required time
+-----------------------------------------------------------------------------
+                                 32.10   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.92   slack (MET)
+
+
+Startpoint: wbs_dat_i[2] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[2] (in)
+     1    0.02                           wbs_dat_i[2] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[2] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.76   32.17   library setup time
+                                 32.17   data required time
+-----------------------------------------------------------------------------
+                                 32.17   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 21.99   slack (MET)
+
+
+Startpoint: wbs_dat_i[0] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[0] (in)
+     1    0.02                           wbs_dat_i[0] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[0] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.89   32.30   library setup time
+                                 32.30   data required time
+-----------------------------------------------------------------------------
+                                 32.30   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 22.12   slack (MET)
+
+
+Startpoint: wbs_we_i (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          3.74    9.31 v input external delay
+                  0.14    0.00    9.31 v wbs_we_i (in)
+     1    0.02                           wbs_we_i (net)
+                  0.14    0.00    9.31 v mprj/wbs_we_i (user_proj_example)
+                                  9.31   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.27   31.69   library setup time
+                                 31.69   data required time
+-----------------------------------------------------------------------------
+                                 31.69   data required time
+                                 -9.31   data arrival time
+-----------------------------------------------------------------------------
+                                 22.37   slack (MET)
+
+
+Startpoint: la_oenb[65] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[65] (in)
+     1    0.01                           la_oenb[65] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[65] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          0.49   29.90   library setup time
+                                 29.90   data required time
+-----------------------------------------------------------------------------
+                                 29.90   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 22.44   slack (MET)
+
+
+Startpoint: wbs_dat_i[8] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.61   10.18 v input external delay
+                  0.84    0.00   10.18 v wbs_dat_i[8] (in)
+     1    0.02                           wbs_dat_i[8] (net)
+                  0.84    0.00   10.18 v mprj/wbs_dat_i[8] (user_proj_example)
+                                 10.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          3.32   32.73   library setup time
+                                 32.73   data required time
+-----------------------------------------------------------------------------
+                                 32.73   data required time
+                                -10.18   data arrival time
+-----------------------------------------------------------------------------
+                                 22.55   slack (MET)
+
+
+Startpoint: la_oenb[53] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[53] (in)
+     1    0.00                           la_oenb[53] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[53] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          0.62   30.03   library setup time
+                                 30.03   data required time
+-----------------------------------------------------------------------------
+                                 30.03   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 22.57   slack (MET)
+
+
+Startpoint: la_oenb[58] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[58] (in)
+     1    0.01                           la_oenb[58] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[58] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          0.81   30.22   library setup time
+                                 30.22   data required time
+-----------------------------------------------------------------------------
+                                 30.22   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 22.76   slack (MET)
+
+
+Startpoint: la_oenb[54] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[54] (in)
+     1    0.00                           la_oenb[54] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[54] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          0.86   30.28   library setup time
+                                 30.28   data required time
+-----------------------------------------------------------------------------
+                                 30.28   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 22.82   slack (MET)
+
+
+Startpoint: wbs_sel_i[0] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          3.17    8.74 v input external delay
+                  0.18    0.00    8.74 v wbs_sel_i[0] (in)
+     1    0.02                           wbs_sel_i[0] (net)
+                  0.18    0.00    8.74 v mprj/wbs_sel_i[0] (user_proj_example)
+                                  8.74   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.23   31.64   library setup time
+                                 31.64   data required time
+-----------------------------------------------------------------------------
+                                 31.64   data required time
+                                 -8.74   data arrival time
+-----------------------------------------------------------------------------
+                                 22.90   slack (MET)
+
+
+Startpoint: la_data_in[53] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[53] (in)
+     1    0.00                           la_data_in[53] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[53] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          0.93   30.34   library setup time
+                                 30.34   data required time
+-----------------------------------------------------------------------------
+                                 30.34   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 22.90   slack (MET)
+
+
+Startpoint: la_oenb[51] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 ^ input external delay
+                  0.97    0.00    7.46 ^ la_oenb[51] (in)
+     1    0.01                           la_oenb[51] (net)
+                  0.97    0.00    7.46 ^ mprj/la_oenb[51] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.07   30.48   library setup time
+                                 30.48   data required time
+-----------------------------------------------------------------------------
+                                 30.48   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.02   slack (MET)
+
+
+Startpoint: la_oenb[52] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 ^ input external delay
+                  0.97    0.00    7.46 ^ la_oenb[52] (in)
+     1    0.00                           la_oenb[52] (net)
+                  0.97    0.00    7.46 ^ mprj/la_oenb[52] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.11   30.53   library setup time
+                                 30.53   data required time
+-----------------------------------------------------------------------------
+                                 30.53   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.07   slack (MET)
+
+
+Startpoint: la_oenb[60] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[60] (in)
+     1    0.01                           la_oenb[60] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[60] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.12   30.53   library setup time
+                                 30.53   data required time
+-----------------------------------------------------------------------------
+                                 30.53   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.07   slack (MET)
+
+
+Startpoint: la_oenb[61] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[61] (in)
+     1    0.01                           la_oenb[61] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[61] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.13   30.54   library setup time
+                                 30.54   data required time
+-----------------------------------------------------------------------------
+                                 30.54   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.08   slack (MET)
+
+
+Startpoint: la_oenb[55] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 ^ input external delay
+                  0.97    0.00    7.46 ^ la_oenb[55] (in)
+     1    0.01                           la_oenb[55] (net)
+                  0.97    0.00    7.46 ^ mprj/la_oenb[55] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.13   30.54   library setup time
+                                 30.54   data required time
+-----------------------------------------------------------------------------
+                                 30.54   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.08   slack (MET)
+
+
+Startpoint: la_oenb[59] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[59] (in)
+     1    0.01                           la_oenb[59] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[59] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.14   30.56   library setup time
+                                 30.56   data required time
+-----------------------------------------------------------------------------
+                                 30.56   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.10   slack (MET)
+
+
+Startpoint: la_oenb[57] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[57] (in)
+     1    0.01                           la_oenb[57] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[57] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.17   30.58   library setup time
+                                 30.58   data required time
+-----------------------------------------------------------------------------
+                                 30.58   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.12   slack (MET)
+
+
+Startpoint: la_oenb[63] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[63] (in)
+     1    0.01                           la_oenb[63] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[63] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.18   30.59   library setup time
+                                 30.59   data required time
+-----------------------------------------------------------------------------
+                                 30.59   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.13   slack (MET)
+
+
+Startpoint: la_oenb[56] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[56] (in)
+     1    0.01                           la_oenb[56] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[56] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.19   30.60   library setup time
+                                 30.60   data required time
+-----------------------------------------------------------------------------
+                                 30.60   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.14   slack (MET)
+
+
+Startpoint: wbs_sel_i[1] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          3.17    8.74 v input external delay
+                  0.18    0.00    8.74 v wbs_sel_i[1] (in)
+     1    0.02                           wbs_sel_i[1] (net)
+                  0.18    0.00    8.74 v mprj/wbs_sel_i[1] (user_proj_example)
+                                  8.74   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.47   31.88   library setup time
+                                 31.88   data required time
+-----------------------------------------------------------------------------
+                                 31.88   data required time
+                                 -8.74   data arrival time
+-----------------------------------------------------------------------------
+                                 23.14   slack (MET)
+
+
+Startpoint: la_oenb[62] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[62] (in)
+     1    0.01                           la_oenb[62] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[62] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.21   30.62   library setup time
+                                 30.62   data required time
+-----------------------------------------------------------------------------
+                                 30.62   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.16   slack (MET)
+
+
+Startpoint: la_oenb[50] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[50] (in)
+     1    0.00                           la_oenb[50] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[50] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.21   30.62   library setup time
+                                 30.62   data required time
+-----------------------------------------------------------------------------
+                                 30.62   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.16   slack (MET)
+
+
+Startpoint: la_data_in[58] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[58] (in)
+     1    0.01                           la_data_in[58] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[58] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.23   30.64   library setup time
+                                 30.64   data required time
+-----------------------------------------------------------------------------
+                                 30.64   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.20   slack (MET)
+
+
+Startpoint: la_oenb[49] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[49] (in)
+     1    0.00                           la_oenb[49] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[49] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.26   30.67   library setup time
+                                 30.67   data required time
+-----------------------------------------------------------------------------
+                                 30.67   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.21   slack (MET)
+
+
+Startpoint: la_oenb[48] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.89    7.46 v input external delay
+                  0.97    0.00    7.46 v la_oenb[48] (in)
+     1    0.01                           la_oenb[48] (net)
+                  0.97    0.00    7.46 v mprj/la_oenb[48] (user_proj_example)
+                                  7.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.29   30.70   library setup time
+                                 30.70   data required time
+-----------------------------------------------------------------------------
+                                 30.70   data required time
+                                 -7.46   data arrival time
+-----------------------------------------------------------------------------
+                                 23.24   slack (MET)
+
+
+Startpoint: la_data_in[54] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[54] (in)
+     1    0.01                           la_data_in[54] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[54] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.49   30.90   library setup time
+                                 30.90   data required time
+-----------------------------------------------------------------------------
+                                 30.90   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.46   slack (MET)
+
+
+Startpoint: la_data_in[55] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[55] (in)
+     1    0.01                           la_data_in[55] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[55] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.59   31.00   library setup time
+                                 31.00   data required time
+-----------------------------------------------------------------------------
+                                 31.00   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.56   slack (MET)
+
+
+Startpoint: la_data_in[51] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[51] (in)
+     1    0.00                           la_data_in[51] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[51] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.63   31.05   library setup time
+                                 31.05   data required time
+-----------------------------------------------------------------------------
+                                 31.05   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.61   slack (MET)
+
+
+Startpoint: la_data_in[52] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[52] (in)
+     1    0.00                           la_data_in[52] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[52] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.64   31.05   library setup time
+                                 31.05   data required time
+-----------------------------------------------------------------------------
+                                 31.05   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.61   slack (MET)
+
+
+Startpoint: la_data_in[50] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[50] (in)
+     1    0.00                           la_data_in[50] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[50] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.77   31.18   library setup time
+                                 31.18   data required time
+-----------------------------------------------------------------------------
+                                 31.18   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.74   slack (MET)
+
+
+Startpoint: la_data_in[63] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[63] (in)
+     1    0.01                           la_data_in[63] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[63] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.80   31.21   library setup time
+                                 31.21   data required time
+-----------------------------------------------------------------------------
+                                 31.21   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.77   slack (MET)
+
+
+Startpoint: la_data_in[48] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[48] (in)
+     1    0.00                           la_data_in[48] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[48] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.81   31.22   library setup time
+                                 31.22   data required time
+-----------------------------------------------------------------------------
+                                 31.22   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.78   slack (MET)
+
+
+Startpoint: la_data_in[61] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[61] (in)
+     1    0.01                           la_data_in[61] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[61] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.82   31.23   library setup time
+                                 31.23   data required time
+-----------------------------------------------------------------------------
+                                 31.23   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.79   slack (MET)
+
+
+Startpoint: la_data_in[59] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[59] (in)
+     1    0.01                           la_data_in[59] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[59] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.84   31.25   library setup time
+                                 31.25   data required time
+-----------------------------------------------------------------------------
+                                 31.25   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.81   slack (MET)
+
+
+Startpoint: la_data_in[62] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[62] (in)
+     1    0.01                           la_data_in[62] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[62] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.85   31.26   library setup time
+                                 31.26   data required time
+-----------------------------------------------------------------------------
+                                 31.26   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.82   slack (MET)
+
+
+Startpoint: la_data_in[57] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[57] (in)
+     1    0.01                           la_data_in[57] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[57] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.86   31.27   library setup time
+                                 31.27   data required time
+-----------------------------------------------------------------------------
+                                 31.27   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.83   slack (MET)
+
+
+Startpoint: la_data_in[60] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[60] (in)
+     1    0.01                           la_data_in[60] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[60] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.88   31.29   library setup time
+                                 31.29   data required time
+-----------------------------------------------------------------------------
+                                 31.29   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.85   slack (MET)
+
+
+Startpoint: la_data_in[49] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[49] (in)
+     1    0.01                           la_data_in[49] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[49] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          1.91   31.32   library setup time
+                                 31.32   data required time
+-----------------------------------------------------------------------------
+                                 31.32   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 23.88   slack (MET)
+
+
+Startpoint: la_data_in[56] (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          1.87    7.44 v input external delay
+                  0.86    0.00    7.44 v la_data_in[56] (in)
+     1    0.01                           la_data_in[56] (net)
+                  0.86    0.00    7.44 v mprj/la_data_in[56] (user_proj_example)
+                                  7.44   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock source latency
+                  0.61    0.00   29.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   29.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   29.41   clock uncertainty
+                          0.00   29.41   clock reconvergence pessimism
+                          2.14   31.55   library setup time
+                                 31.55   data required time
+-----------------------------------------------------------------------------
+                                 31.55   data required time
+                                 -7.44   data arrival time
+-----------------------------------------------------------------------------
+                                 24.11   slack (MET)
+
+
+Startpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Endpoint: wbs_ack_o (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01    5.58 ^ mprj/wb_clk_i (user_proj_example)
+                  0.22    8.71   14.29 ^ mprj/wbs_ack_o (user_proj_example)
+     1    0.20                           wbs_ack_o (net)
+                  0.22    0.02   14.31 ^ wbs_ack_o (out)
+                                 14.31   data arrival time
+
+                         50.00   50.00   clock clk (rise edge)
+                          4.65   54.65   clock network delay (propagated)
+                         -0.25   54.40   clock uncertainty
+                          0.00   54.40   clock reconvergence pessimism
+                         -8.41   45.99   output external delay
+                                 45.99   data required time
+-----------------------------------------------------------------------------
+                                 45.99   data required time
+                                -14.31   data arrival time
+-----------------------------------------------------------------------------
+                                 31.68   slack (MET)
+
+
+Startpoint: wbs_cyc_i (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.74   10.31 v input external delay
+                  0.17    0.00   10.31 v wbs_cyc_i (in)
+     1    0.02                           wbs_cyc_i (net)
+                  0.17    0.00   10.31 v mprj/wbs_cyc_i (user_proj_example)
+                                 10.31   data arrival time
+
+                         50.00   50.00   clock clk (rise edge)
+                          4.65   54.65   clock source latency
+                  0.61    0.00   54.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   54.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   54.41   clock uncertainty
+                          0.00   54.41   clock reconvergence pessimism
+                          1.22   55.63   library setup time
+                                 55.63   data required time
+-----------------------------------------------------------------------------
+                                 55.63   data required time
+                                -10.31   data arrival time
+-----------------------------------------------------------------------------
+                                 45.32   slack (MET)
+
+
+Startpoint: wbs_stb_i (input port clocked by clk)
+Endpoint: mprj (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock network delay (propagated)
+                          4.13    9.70 v input external delay
+                  0.15    0.00    9.70 v wbs_stb_i (in)
+     1    0.02                           wbs_stb_i (net)
+                  0.15    0.00    9.70 v mprj/wbs_stb_i (user_proj_example)
+                                  9.70   data arrival time
+
+                         50.00   50.00   clock clk (rise edge)
+                          4.65   54.65   clock source latency
+                  0.61    0.00   54.65 ^ wb_clk_i (in)
+     1    0.17                           wb_clk_i (net)
+                  0.63    0.01   54.66 ^ mprj/wb_clk_i (user_proj_example)
+                         -0.25   54.41   clock uncertainty
+                          0.00   54.41   clock reconvergence pessimism
+                          1.43   55.84   library setup time
+                                 55.84   data required time
+-----------------------------------------------------------------------------
+                                 55.84   data required time
+                                 -9.70   data arrival time
+-----------------------------------------------------------------------------
+                                 46.14   slack (MET)
+
+
+
