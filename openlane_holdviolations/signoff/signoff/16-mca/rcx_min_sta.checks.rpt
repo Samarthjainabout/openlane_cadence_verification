@@ -1,0 +1,595 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Fastest Corner ===================================
+
+Startpoint: mprj/_004_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+Corner: Fastest
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.02                           wb_clk_i (net)
+                  0.61    0.00    5.57 ^ mprj/clkbuf_0_wb_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.05    0.15    5.72 ^ mprj/clkbuf_0_wb_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           mprj/clknet_0_wb_clk_i (net)
+                  0.05    0.00    5.72 ^ mprj/clkbuf_1_0__f_wb_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.02    0.08    5.80 ^ mprj/clkbuf_1_0__f_wb_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01                           mprj/clknet_1_0__leaf_wb_clk_i (net)
+                  0.02    0.00    5.80 ^ mprj/_004_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                  0.03    0.19    5.99 ^ mprj/_004_/Q (sky130_fd_sc_hd__dfxtp_1)
+     1    0.00                           mprj/net2 (net)
+                  0.03    0.00    5.99 ^ mprj/hold6/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.04    0.39    6.38 ^ mprj/hold6/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.00                           mprj/net135 (net)
+                  0.04    0.00    6.38 ^ mprj/hold3/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.07    0.42    6.80 ^ mprj/hold3/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     2    0.01                           mprj/net132 (net)
+                  0.07    0.00    6.80 ^ mprj/hold7/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.06    0.42    7.21 ^ mprj/hold7/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.01                           mprj/net136 (net)
+                  0.06    0.00    7.21 ^ mprj/output2/A (sky130_fd_sc_hd__buf_6)
+                  0.02    0.07    7.28 ^ mprj/output2/X (sky130_fd_sc_hd__buf_6)
+     1    0.01                           mprj/net133 (net)
+                  0.02    0.00    7.28 ^ mprj/hold4/A (sky130_fd_sc_hd__buf_12)
+                  0.24    0.21    7.49 ^ mprj/hold4/X (sky130_fd_sc_hd__buf_12)
+     1    0.28                           la_data_out[0] (net)
+                  0.24    0.02    7.52 ^ la_data_out[0] (out)
+                                  7.52   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                 -7.52   data arrival time
+-----------------------------------------------------------------------------
+                                 20.88   slack (MET)
+
+
+
+======================= Slowest Corner ===================================
+
+Startpoint: mprj/_004_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+Corner: Slowest
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.02                           wb_clk_i (net)
+                  0.61    0.00    5.57 ^ mprj/clkbuf_0_wb_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.08    0.47    6.04 ^ mprj/clkbuf_0_wb_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           mprj/clknet_0_wb_clk_i (net)
+                  0.08    0.00    6.04 ^ mprj/clkbuf_1_0__f_wb_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.05    0.21    6.26 ^ mprj/clkbuf_1_0__f_wb_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01                           mprj/clknet_1_0__leaf_wb_clk_i (net)
+                  0.05    0.00    6.26 ^ mprj/_004_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                  0.04    0.59    6.84 v mprj/_004_/Q (sky130_fd_sc_hd__dfxtp_1)
+     1    0.00                           mprj/net2 (net)
+                  0.04    0.00    6.84 v mprj/hold6/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.10    1.16    8.00 v mprj/hold6/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.00                           mprj/net135 (net)
+                  0.10    0.00    8.00 v mprj/hold3/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.15    1.25    9.25 v mprj/hold3/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     2    0.01                           mprj/net132 (net)
+                  0.15    0.00    9.25 v mprj/hold7/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.14    1.26   10.52 v mprj/hold7/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.01                           mprj/net136 (net)
+                  0.14    0.00   10.52 v mprj/output2/A (sky130_fd_sc_hd__buf_6)
+                  0.04    0.25   10.77 v mprj/output2/X (sky130_fd_sc_hd__buf_6)
+     1    0.01                           mprj/net133 (net)
+                  0.04    0.00   10.77 v mprj/hold4/A (sky130_fd_sc_hd__buf_12)
+                  0.24    0.39   11.16 v mprj/hold4/X (sky130_fd_sc_hd__buf_12)
+     1    0.28                           la_data_out[0] (net)
+                  0.24    0.02   11.18 v la_data_out[0] (out)
+                                 11.18   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                -11.18   data arrival time
+-----------------------------------------------------------------------------
+                                 17.22   slack (MET)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: mprj/_004_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: la_data_out[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+Corner: Typical
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                          0.00    0.00   clock clk (rise edge)
+                          5.57    5.57   clock source latency
+                  0.61    0.00    5.57 ^ wb_clk_i (in)
+     1    0.02                           wb_clk_i (net)
+                  0.61    0.00    5.57 ^ mprj/clkbuf_0_wb_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.06    0.27    5.84 ^ mprj/clkbuf_0_wb_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.02                           mprj/clknet_0_wb_clk_i (net)
+                  0.06    0.00    5.84 ^ mprj/clkbuf_1_0__f_wb_clk_i/A (sky130_fd_sc_hd__clkbuf_16)
+                  0.03    0.12    5.97 ^ mprj/clkbuf_1_0__f_wb_clk_i/X (sky130_fd_sc_hd__clkbuf_16)
+     2    0.01                           mprj/clknet_1_0__leaf_wb_clk_i (net)
+                  0.03    0.00    5.97 ^ mprj/_004_/CLK (sky130_fd_sc_hd__dfxtp_1)
+                  0.04    0.31    6.27 ^ mprj/_004_/Q (sky130_fd_sc_hd__dfxtp_1)
+     1    0.00                           mprj/net2 (net)
+                  0.04    0.00    6.27 ^ mprj/hold6/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.05    0.56    6.83 ^ mprj/hold6/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.00                           mprj/net135 (net)
+                  0.05    0.00    6.83 ^ mprj/hold3/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.09    0.60    7.43 ^ mprj/hold3/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     2    0.01                           mprj/net132 (net)
+                  0.09    0.00    7.43 ^ mprj/hold7/A (sky130_fd_sc_hd__dlygate4sd3_1)
+                  0.08    0.60    8.03 ^ mprj/hold7/X (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.01                           mprj/net136 (net)
+                  0.08    0.00    8.03 ^ mprj/output2/A (sky130_fd_sc_hd__buf_6)
+                  0.03    0.11    8.14 ^ mprj/output2/X (sky130_fd_sc_hd__buf_6)
+     1    0.01                           mprj/net133 (net)
+                  0.03    0.00    8.14 ^ mprj/hold4/A (sky130_fd_sc_hd__buf_12)
+                  0.32    0.29    8.44 ^ mprj/hold4/X (sky130_fd_sc_hd__buf_12)
+     1    0.28                           la_data_out[0] (net)
+                  0.32    0.02    8.46 ^ la_data_out[0] (out)
+                                  8.46   data arrival time
+
+                         25.00   25.00   clock clk (rise edge)
+                          4.65   29.65   clock network delay (propagated)
+                         -0.25   29.40   clock uncertainty
+                          0.00   29.40   clock reconvergence pessimism
+                         -1.00   28.40   output external delay
+                                 28.40   data required time
+-----------------------------------------------------------------------------
+                                 28.40   data required time
+                                 -8.46   data arrival time
+-----------------------------------------------------------------------------
+                                 19.94   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Fastest Corner ===================================
+
+No paths found.
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Fastest Corner ===================================
+
+
+======================= Slowest Corner ===================================
+
+
+======================= Typical Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 254 unannotated drivers.
+ la_data_in[100]
+ la_data_in[101]
+ la_data_in[102]
+ la_data_in[103]
+ la_data_in[104]
+ la_data_in[105]
+ la_data_in[106]
+ la_data_in[107]
+ la_data_in[108]
+ la_data_in[109]
+ la_data_in[10]
+ la_data_in[110]
+ la_data_in[111]
+ la_data_in[112]
+ la_data_in[113]
+ la_data_in[114]
+ la_data_in[115]
+ la_data_in[116]
+ la_data_in[117]
+ la_data_in[118]
+ la_data_in[119]
+ la_data_in[11]
+ la_data_in[120]
+ la_data_in[121]
+ la_data_in[122]
+ la_data_in[123]
+ la_data_in[124]
+ la_data_in[125]
+ la_data_in[126]
+ la_data_in[127]
+ la_data_in[12]
+ la_data_in[13]
+ la_data_in[14]
+ la_data_in[15]
+ la_data_in[16]
+ la_data_in[17]
+ la_data_in[18]
+ la_data_in[19]
+ la_data_in[1]
+ la_data_in[20]
+ la_data_in[21]
+ la_data_in[22]
+ la_data_in[23]
+ la_data_in[24]
+ la_data_in[25]
+ la_data_in[26]
+ la_data_in[27]
+ la_data_in[28]
+ la_data_in[29]
+ la_data_in[2]
+ la_data_in[30]
+ la_data_in[31]
+ la_data_in[32]
+ la_data_in[33]
+ la_data_in[34]
+ la_data_in[35]
+ la_data_in[36]
+ la_data_in[37]
+ la_data_in[38]
+ la_data_in[39]
+ la_data_in[3]
+ la_data_in[40]
+ la_data_in[41]
+ la_data_in[42]
+ la_data_in[43]
+ la_data_in[44]
+ la_data_in[45]
+ la_data_in[46]
+ la_data_in[47]
+ la_data_in[48]
+ la_data_in[49]
+ la_data_in[4]
+ la_data_in[50]
+ la_data_in[51]
+ la_data_in[52]
+ la_data_in[53]
+ la_data_in[54]
+ la_data_in[55]
+ la_data_in[56]
+ la_data_in[57]
+ la_data_in[58]
+ la_data_in[59]
+ la_data_in[5]
+ la_data_in[60]
+ la_data_in[61]
+ la_data_in[62]
+ la_data_in[63]
+ la_data_in[64]
+ la_data_in[65]
+ la_data_in[66]
+ la_data_in[67]
+ la_data_in[68]
+ la_data_in[69]
+ la_data_in[6]
+ la_data_in[70]
+ la_data_in[71]
+ la_data_in[72]
+ la_data_in[73]
+ la_data_in[74]
+ la_data_in[75]
+ la_data_in[76]
+ la_data_in[77]
+ la_data_in[78]
+ la_data_in[79]
+ la_data_in[7]
+ la_data_in[80]
+ la_data_in[81]
+ la_data_in[82]
+ la_data_in[83]
+ la_data_in[84]
+ la_data_in[85]
+ la_data_in[86]
+ la_data_in[87]
+ la_data_in[88]
+ la_data_in[89]
+ la_data_in[8]
+ la_data_in[90]
+ la_data_in[91]
+ la_data_in[92]
+ la_data_in[93]
+ la_data_in[94]
+ la_data_in[95]
+ la_data_in[96]
+ la_data_in[97]
+ la_data_in[98]
+ la_data_in[99]
+ la_data_in[9]
+ wb_rst_i
+ mprj/user_proj_example_10/HI
+ mprj/user_proj_example_100/HI
+ mprj/user_proj_example_101/HI
+ mprj/user_proj_example_102/HI
+ mprj/user_proj_example_103/HI
+ mprj/user_proj_example_104/HI
+ mprj/user_proj_example_105/HI
+ mprj/user_proj_example_106/HI
+ mprj/user_proj_example_107/HI
+ mprj/user_proj_example_108/HI
+ mprj/user_proj_example_109/HI
+ mprj/user_proj_example_11/HI
+ mprj/user_proj_example_110/HI
+ mprj/user_proj_example_111/HI
+ mprj/user_proj_example_112/HI
+ mprj/user_proj_example_113/HI
+ mprj/user_proj_example_114/HI
+ mprj/user_proj_example_115/HI
+ mprj/user_proj_example_116/HI
+ mprj/user_proj_example_117/HI
+ mprj/user_proj_example_118/HI
+ mprj/user_proj_example_119/HI
+ mprj/user_proj_example_12/HI
+ mprj/user_proj_example_120/HI
+ mprj/user_proj_example_121/HI
+ mprj/user_proj_example_122/HI
+ mprj/user_proj_example_123/HI
+ mprj/user_proj_example_124/HI
+ mprj/user_proj_example_125/HI
+ mprj/user_proj_example_126/HI
+ mprj/user_proj_example_127/HI
+ mprj/user_proj_example_128/HI
+ mprj/user_proj_example_129/HI
+ mprj/user_proj_example_13/HI
+ mprj/user_proj_example_14/HI
+ mprj/user_proj_example_15/HI
+ mprj/user_proj_example_16/HI
+ mprj/user_proj_example_17/HI
+ mprj/user_proj_example_18/HI
+ mprj/user_proj_example_19/HI
+ mprj/user_proj_example_20/HI
+ mprj/user_proj_example_21/HI
+ mprj/user_proj_example_22/HI
+ mprj/user_proj_example_23/HI
+ mprj/user_proj_example_24/HI
+ mprj/user_proj_example_25/HI
+ mprj/user_proj_example_26/HI
+ mprj/user_proj_example_27/HI
+ mprj/user_proj_example_28/HI
+ mprj/user_proj_example_29/HI
+ mprj/user_proj_example_30/HI
+ mprj/user_proj_example_31/HI
+ mprj/user_proj_example_32/HI
+ mprj/user_proj_example_33/HI
+ mprj/user_proj_example_34/HI
+ mprj/user_proj_example_35/HI
+ mprj/user_proj_example_36/HI
+ mprj/user_proj_example_37/HI
+ mprj/user_proj_example_38/HI
+ mprj/user_proj_example_39/HI
+ mprj/user_proj_example_4/HI
+ mprj/user_proj_example_40/HI
+ mprj/user_proj_example_41/HI
+ mprj/user_proj_example_42/HI
+ mprj/user_proj_example_43/HI
+ mprj/user_proj_example_44/HI
+ mprj/user_proj_example_45/HI
+ mprj/user_proj_example_46/HI
+ mprj/user_proj_example_47/HI
+ mprj/user_proj_example_48/HI
+ mprj/user_proj_example_49/HI
+ mprj/user_proj_example_5/HI
+ mprj/user_proj_example_50/HI
+ mprj/user_proj_example_51/HI
+ mprj/user_proj_example_52/HI
+ mprj/user_proj_example_53/HI
+ mprj/user_proj_example_54/HI
+ mprj/user_proj_example_55/HI
+ mprj/user_proj_example_56/HI
+ mprj/user_proj_example_57/HI
+ mprj/user_proj_example_58/HI
+ mprj/user_proj_example_59/HI
+ mprj/user_proj_example_6/HI
+ mprj/user_proj_example_60/HI
+ mprj/user_proj_example_61/HI
+ mprj/user_proj_example_62/HI
+ mprj/user_proj_example_63/HI
+ mprj/user_proj_example_64/HI
+ mprj/user_proj_example_65/HI
+ mprj/user_proj_example_66/HI
+ mprj/user_proj_example_67/HI
+ mprj/user_proj_example_68/HI
+ mprj/user_proj_example_69/HI
+ mprj/user_proj_example_7/HI
+ mprj/user_proj_example_70/HI
+ mprj/user_proj_example_71/HI
+ mprj/user_proj_example_72/HI
+ mprj/user_proj_example_73/HI
+ mprj/user_proj_example_74/HI
+ mprj/user_proj_example_75/HI
+ mprj/user_proj_example_76/HI
+ mprj/user_proj_example_77/HI
+ mprj/user_proj_example_78/HI
+ mprj/user_proj_example_79/HI
+ mprj/user_proj_example_8/HI
+ mprj/user_proj_example_80/HI
+ mprj/user_proj_example_81/HI
+ mprj/user_proj_example_82/HI
+ mprj/user_proj_example_83/HI
+ mprj/user_proj_example_84/HI
+ mprj/user_proj_example_85/HI
+ mprj/user_proj_example_86/HI
+ mprj/user_proj_example_87/HI
+ mprj/user_proj_example_88/HI
+ mprj/user_proj_example_89/HI
+ mprj/user_proj_example_9/HI
+ mprj/user_proj_example_90/HI
+ mprj/user_proj_example_91/HI
+ mprj/user_proj_example_92/HI
+ mprj/user_proj_example_93/HI
+ mprj/user_proj_example_94/HI
+ mprj/user_proj_example_95/HI
+ mprj/user_proj_example_96/HI
+ mprj/user_proj_example_97/HI
+ mprj/user_proj_example_98/HI
+ mprj/user_proj_example_99/HI
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 126 unconstrained endpoints.
+  la_data_out[100]
+  la_data_out[101]
+  la_data_out[102]
+  la_data_out[103]
+  la_data_out[104]
+  la_data_out[105]
+  la_data_out[106]
+  la_data_out[107]
+  la_data_out[108]
+  la_data_out[109]
+  la_data_out[10]
+  la_data_out[110]
+  la_data_out[111]
+  la_data_out[112]
+  la_data_out[113]
+  la_data_out[114]
+  la_data_out[115]
+  la_data_out[116]
+  la_data_out[117]
+  la_data_out[118]
+  la_data_out[119]
+  la_data_out[11]
+  la_data_out[120]
+  la_data_out[121]
+  la_data_out[122]
+  la_data_out[123]
+  la_data_out[124]
+  la_data_out[125]
+  la_data_out[126]
+  la_data_out[127]
+  la_data_out[12]
+  la_data_out[13]
+  la_data_out[14]
+  la_data_out[15]
+  la_data_out[16]
+  la_data_out[17]
+  la_data_out[18]
+  la_data_out[19]
+  la_data_out[20]
+  la_data_out[21]
+  la_data_out[22]
+  la_data_out[23]
+  la_data_out[24]
+  la_data_out[25]
+  la_data_out[26]
+  la_data_out[27]
+  la_data_out[28]
+  la_data_out[29]
+  la_data_out[2]
+  la_data_out[30]
+  la_data_out[31]
+  la_data_out[32]
+  la_data_out[33]
+  la_data_out[34]
+  la_data_out[35]
+  la_data_out[36]
+  la_data_out[37]
+  la_data_out[38]
+  la_data_out[39]
+  la_data_out[3]
+  la_data_out[40]
+  la_data_out[41]
+  la_data_out[42]
+  la_data_out[43]
+  la_data_out[44]
+  la_data_out[45]
+  la_data_out[46]
+  la_data_out[47]
+  la_data_out[48]
+  la_data_out[49]
+  la_data_out[4]
+  la_data_out[50]
+  la_data_out[51]
+  la_data_out[52]
+  la_data_out[53]
+  la_data_out[54]
+  la_data_out[55]
+  la_data_out[56]
+  la_data_out[57]
+  la_data_out[58]
+  la_data_out[59]
+  la_data_out[5]
+  la_data_out[60]
+  la_data_out[61]
+  la_data_out[62]
+  la_data_out[63]
+  la_data_out[64]
+  la_data_out[65]
+  la_data_out[66]
+  la_data_out[67]
+  la_data_out[68]
+  la_data_out[69]
+  la_data_out[6]
+  la_data_out[70]
+  la_data_out[71]
+  la_data_out[72]
+  la_data_out[73]
+  la_data_out[74]
+  la_data_out[75]
+  la_data_out[76]
+  la_data_out[77]
+  la_data_out[78]
+  la_data_out[79]
+  la_data_out[7]
+  la_data_out[80]
+  la_data_out[81]
+  la_data_out[82]
+  la_data_out[83]
+  la_data_out[84]
+  la_data_out[85]
+  la_data_out[86]
+  la_data_out[87]
+  la_data_out[88]
+  la_data_out[89]
+  la_data_out[8]
+  la_data_out[90]
+  la_data_out[91]
+  la_data_out[92]
+  la_data_out[93]
+  la_data_out[94]
+  la_data_out[95]
+  la_data_out[96]
+  la_data_out[97]
+  la_data_out[98]
+  la_data_out[99]
+  la_data_out[9]
