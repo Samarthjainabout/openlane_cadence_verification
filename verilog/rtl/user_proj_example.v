@@ -1,131 +1,76 @@
-// SPDX-FileCopyrightText: 2020 Efabless Corporation
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-//      http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-// SPDX-License-Identifier: Apache-2.0
-
 `default_nettype none
-/*
- *-------------------------------------------------------------
- *
- * user_proj_example
- *
- * This is an example of a (trivially simple) user project,
- * showing how the user project can connect to the logic
- * analyzer, the wishbone bus, and the I/O pads.
- *
- * This project generates an integer count, which is output
- * on the user area GPIO pads (digital output only).  The
- * wishbone connection allows the project to be controlled
- * (start and stop) from the management SoC program.
- *
- * See the testbenches in directory "mprj_counter" for the
- * example programs that drive this user project.  The three
- * testbenches are "io_ports", "la_test1", and "la_test2".
- *
- *-------------------------------------------------------------
- */
 
-module user_proj_example #(
-    parameter BITS = 16
-)(
+module user_proj_example (
 `ifdef USE_POWER_PINS
-    inout vccd1,	// User area 1 1.8V supply
-    inout vssd1,	// User area 1 digital ground
+    inout wire vccd1,    // User area 1 1.8V supply
+    inout wire vssd1,    // User area 1 digital ground
 `endif
 
-    // Wishbone Slave ports (WB MI A)
-    input wb_clk_i,
-    input wb_rst_i,
-    input wbs_stb_i,
-    input wbs_cyc_i,
-    input wbs_we_i,
-    input [3:0] wbs_sel_i,
-    input [31:0] wbs_dat_i,
-    input [31:0] wbs_adr_i,
-    output wbs_ack_o,
-    output [31:0] wbs_dat_o,
+    // Wishbone clock input
+    input wire wb_clk_i,
+    input wire wb_rst_i,     // External reset signal
 
     // Logic Analyzer Signals
-    input  [127:0] la_data_in,
-    output [127:0] la_data_out,
-    input  [127:0] la_oenb,
-
-    // IOs
-    input  [BITS-1:0] io_in,
-    output [BITS-1:0] io_out,
-    output [BITS-1:0] io_oeb,
-
-    // IRQ
-    output [2:0] irq
+    input wire la_data_in,    // Single bit input
+    output wire [127:0] la_data_out,  // 128-bit output, but we only drive the first 2 bits
+    input wire [127:0] la_oenb  // Enable signals from logic analyzer
 );
-    wire clk;
+
+    // Declare internal signal for controlled clock and reset
+    wire controlled_la_data_in;
     wire rst;
+     wire clk;
+    wire la_write;  // Single-bit la_write
+     wire valid;     // Additional valid signal to control logic
 
-    wire [BITS-1:0] rdata; 
-    wire [BITS-1:0] wdata;
-    wire [BITS-1:0] count;
+    // Use logic analyzer enable signal to control reset and data flow
+    // If LA probe [65] is enabled, control the reset with the logic analyzer signal
+    
+    // Define the valid signal based on some condition (you can adjust this as needed)
+    assign valid = (wb_rst_i == 1'b0);  // In this case, valid when reset is not active, adjust as needed
+    
+    assign rst = (~la_oenb[65]) ? la_data_in : wb_rst_i;
+    assign clk = wb_clk_i;
+    // If LA probe [0] is enabled, control the input data from LA, otherwise it's high impedance
+    assign controlled_la_data_in = la_oenb[0] ? la_data_in : 1'bz;
+  // Derive single-bit la_write signal from la_oenb and valid signal
+    assign la_write = ~la_oenb[63] & valid;  // Single-bit la_write logic with valid condition
 
-    wire valid;
-    wire [3:0] wstrb;
-    wire [BITS-1:0] la_write;
 
-    // WB MI A
-    assign valid = wbs_cyc_i && wbs_stb_i; 
-    assign wstrb = wbs_sel_i & {4{wbs_we_i}};
-    assign wbs_dat_o = {{(32-BITS){1'b0}}, rdata};
-    assign wdata = wbs_dat_i[BITS-1:0];
-
-    // IO
-    assign io_out = count;
-    assign io_oeb = {(BITS){rst}};
-
-    // IRQ
-    assign irq = 3'b000;	// Unused
-
-    // LA
-    assign la_data_out = {{(128-BITS){1'b0}}, count};
-    // Assuming LA probes [63:32] are for controlling the count register  
-    assign la_write = ~la_oenb[63:64-BITS] & ~{BITS{valid}};
-    // Assuming LA probes [65:64] are for controlling the count clk & reset  
-    assign clk = (~la_oenb[64]) ? la_data_in[64]: wb_clk_i;
-    assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
-
-    tiny_test #(
-        .BITS(BITS)
-    ) counter(
-        .clk(wb_clk_i),
-        .rst(rst),
-        .d(la_data_in[0]),
-        .q(la_data_out[0]),
-        .qb(la_data_out[1])
+    // Instantiate the tiny_test module with controlled reset
+    tiny_test counter(
+        .clk(clk),        // Use wb_clk_i as the clock signal
+        .rst(rst),             // Reset signal controlled by LA or wb_rst_i
+        .d(controlled_la_data_in),  // Input data is now controlled by LA signal
+        .q(la_data_out[0]),    // Output q
+        .qb(la_data_out[1]),    // Output qb
+        .la_write(la_write)      // Single-bit la_write controls data updates
     );
 
+    // Set remaining bits of la_data_out to high impedance to avoid shorts
+    assign la_data_out[127:2] = {126{1'bz}};
+
 endmodule
 
-module tiny_test #(
-    parameter BITS = 16
-)(
+module tiny_test (
     input wire clk,
     input wire d,
-    input wire rst,
+    input wire rst,  // Reset signal (controlled by LA or external)
     output reg q,
-    output reg qb
+    output reg qb,
+    input wire la_write // Single-bit la_write controls when data is written
 );
 
-    always @(posedge clk) begin
-        q <= rst ? 0 : d;
-        assign qb = q;
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            q <= 0;  // Reset q to 0
+            qb <= 1;  // Reset qb to 1
+        end
+        else if (la_write) begin
+            q <= d;      // Set q to the input d
+            qb <= ~d;    // Set qb to the complement of d
+        end
     end
-
 endmodule
+
 `default_nettype wire
